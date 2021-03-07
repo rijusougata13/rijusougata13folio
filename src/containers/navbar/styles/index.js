@@ -51,17 +51,20 @@ export const Button = styled(StyledButton)`
   
     }
 `
-  
 
-export const LeftSide = styled.p`
-    color: #F5F5F5;
+
+
+export const LeftSide = styled.img`
+    /* color: #F5F5F5;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 1.5rem;
     display: flex;
     justify-content: left;
     padding: 0 2rem 0 1rem;
-    margin: 1rem;
+    margin: 1rem; */
+    color:white;
+    background-color:goldenrod;
 `;
 
 export const Nav = styled.a`

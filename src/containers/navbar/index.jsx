@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import {Wrappers,LeftSide,Hamburger,RightSide,Nav,Button}from './styles/index';
+import Logo from '../../assets/images/logo.png';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -8,7 +9,9 @@ const Navbar = () => {
     return (
         <>
            <Wrappers>
-                <LeftSide>Blue fitness</LeftSide>
+                <LeftSide src={(Logo)}>
+                    {/* <img src={Logo}></img> */}
+                </LeftSide>
                 <Hamburger onClick={() => setIsOpen(!isOpen)}>
                     <span />
                     <span />
