@@ -17,19 +17,23 @@ export const Wrapper = styled.div`
     max-width:20rem; 
     position:relative;
     display:flex;
+    word-wrap: break-word;
     flex-direction:column;
-    justify-content:center;
+    justify-content:space-evenly;
     align-items:center;
 `;
 
 export const Heading =styled(StyledHeading)`
-
+    position:absolute;
     color:goldenrod;
     font-weight:1000;
     letter-spacing:.4rem;
     font-size:2rem;
     box-sizing:border-box;
     margin:1rem 2rem;
+    top:1rem;
+    width:100%;
+    height:100%;
  @media(max-width:700px){
         font-size:1.2rem;
         padding:1rem;
@@ -38,14 +42,16 @@ export const Heading =styled(StyledHeading)`
 `
 
 export const SubHeading =styled(StyledSubHeading)`
+    position:absolute;
     display:flex;
-    flex-wrap:wrap;
-    width:10rem;
+    text-overflow:clip;
+    max-width:90%;
+    height:10rem;
     color:#fff;
     font-weight:500;
     font-size:1.2rem;
     box-sizing:border-box;
-    margin:1rem 2rem;
+    margin:1rem 0rem;
     @media(max-width:900px){
         font-size:1rem;
         padding:1rem;
@@ -57,12 +63,16 @@ export const Button = styled(StyledButton)`
     transition: transform .3s;
     border-radius:20px;
     position:absolute;
-    bottom:2rem;
+    bottom:1rem;
+    margin:2rem 2rem;
     &:hover {
         cursor:pointer;
         transform: scale(1.1);
     }
     @media (max-width: 750px) {
         font-size: 10px;
+        bottom:1rem;
+        margin:0;
+        padding:.5rem;
     }
 ` ;

@@ -9,7 +9,7 @@ const projectPage=(props)=>{
         <Card>
             <Wrapper>
             <Heading>Project 1</Heading>
-            <SubHeading>Project ddddddddddddddddddddddddDetails</SubHeading>
+            <SubHeading>Project ddddddd Details</SubHeading>
             </Wrapper>
             <Button>Read More</Button>
        
