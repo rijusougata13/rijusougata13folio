@@ -1,6 +1,7 @@
 import Navbar from './containers/navbar/index';
 import styled from 'styled-components';
 import Intro from './containers/intro/index';
+import AboutMe from './containers/aboutMe/index';
 
 const Wrapper=styled.div`
   margin:0 0 !important;
@@ -9,9 +10,6 @@ const Wrapper=styled.div`
 
 const ScrollHandler=(e)=>{
   e.preventDefault();
-  // var cls=e.target.classList;
-  // e.target.classList.remove(cls);
-  // e.target.classList.add("Clicked");
   setTimeout(()=>{
      
   window.scrollTo({
@@ -20,7 +18,6 @@ const ScrollHandler=(e)=>{
       behavior: 'smooth'
     });
   },1000)
-  // document.getElementById('down_arrow').setAttribute('style','opacity:0');
 }
 
 
@@ -29,6 +26,7 @@ function App() {
     <Wrapper>
      <Navbar/>
      <Intro clicked={ScrollHandler}/>
+     <AboutMe/>
     </Wrapper>
   );
 }
