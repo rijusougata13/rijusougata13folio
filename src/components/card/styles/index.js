@@ -14,6 +14,7 @@ export const StyledCard=styled.div`
     justify-content:space-evenly;
     box-shadow:2px 10px 12px rgba(0,0,0,0.5);
     margin:2rem 2rem;
+    z-index:10;
     @media(max-width:800px){
         width:10rem;
         height:15rem;

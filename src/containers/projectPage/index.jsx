@@ -1,11 +1,24 @@
 import React from 'react';
-import {Wrappers,Heading,Button,SubHeading,Wrapper}from './styles/index';
+import {Wrappers,Heading,Button,SubHeading,Wrapper,SliderDiv}from './styles/index';
 import Card from '../../components/card/index';
+import Slider from "react-slick";
 
+// Import css files
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const projectPage=(props)=>{
 
-    
+    const config = {
+  dots: true,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  centerMode: true, // enable center mode
+  centerPadding: '50px' // set center padding
+
+};
     
     const projectArray=[
         {
@@ -46,8 +59,9 @@ const projectPage=(props)=>{
        
     ]
     return(
-        <Wrappers>
-       
+        // <Wrappers>
+        <SliderDiv>
+            <Slider {...config} >
         {
             projectArray.map(project=>(
                 <Card>
@@ -60,7 +74,9 @@ const projectPage=(props)=>{
             </Card>
             ))
         }
-        </Wrappers>
+        </Slider>
+        </SliderDiv>
+        // </Wrappers>
     );
 }
 

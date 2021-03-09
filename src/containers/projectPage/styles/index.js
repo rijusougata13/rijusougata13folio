@@ -11,6 +11,9 @@ export const Wrappers = styled.div`
     justify-content:center;
     align-items:center;
     flex-wrap:wrap;
+    /* z-index:-100; */
+    
+    /* flex-direction:row; */
 `;
 
 export const Wrapper = styled.div`
@@ -79,3 +82,18 @@ export const Button = styled(StyledButton)`
         padding:.5rem;
     }
 ` ;
+
+export const SliderDiv=styled.div`
+   height:100%;
+    width:100%;
+    background-color:#a4152c;
+    transition:all .2s;
+    :focus{
+        outline:none;
+    }
+
+    .slick-dots{
+        background-color:red;
+    }
+    
+`;
