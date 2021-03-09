@@ -4,18 +4,19 @@ import {StyledSubHeading} from '../../../components/subHeading-text/styles/index
 import {StyledButton} from '../../../components/button/styles/index';
 
 export const Wrappers = styled.div`
-    height:100vh;
+    height:100%;
     width:100%;
     background-color:#a4152c;
     display:flex;
     justify-content:center;
     align-items:center;
+    flex-wrap:wrap;
 `;
 
 export const Wrapper = styled.div`
-    height:100vh;
-    max-width:20rem; 
-    position:relative;
+    height:100%;
+    max-width:100%; 
+    position:absolute;
     display:flex;
     word-wrap: break-word;
     flex-direction:column;
@@ -24,37 +25,39 @@ export const Wrapper = styled.div`
 `;
 
 export const Heading =styled(StyledHeading)`
-    position:absolute;
+    /* position:absolute; */
     color:goldenrod;
     font-weight:1000;
     letter-spacing:.4rem;
     font-size:2rem;
     box-sizing:border-box;
-    margin:1rem 2rem;
-    top:1rem;
-    width:100%;
-    height:100%;
+    padding:0rem 1rem;
+    margin-top:-10rem;
  @media(max-width:700px){
+        margin-top:-2rem;
         font-size:1.2rem;
         padding:1rem;
+        letter-spacing:0;
     }
     
 `
 
 export const SubHeading =styled(StyledSubHeading)`
-    position:absolute;
-    display:flex;
-    text-overflow:clip;
-    max-width:90%;
-    height:10rem;
-    color:#fff;
-    font-weight:500;
-    font-size:1.2rem;
+    /* position:absolute; */
+     color:#fff;
+    font-weight:300;
+    letter-spacing:.1rem;
+    font-size:1rem;
     box-sizing:border-box;
-    margin:1rem 0rem;
+    padding:1rem 1rem;
+    margin-top:-10rem;
+    margin-left:2rem;
+    margin-right:2rem;
+    overflow:hidden;
     @media(max-width:900px){
-        font-size:1rem;
+        font-size:.9rem;
         padding:1rem;
+        margin-top:-2rem;
     }
 
 `

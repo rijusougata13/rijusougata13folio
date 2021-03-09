@@ -13,7 +13,7 @@ export const StyledCard=styled.div`
     align-items:center;
     justify-content:space-evenly;
     box-shadow:2px 10px 12px rgba(0,0,0,0.5);
-
+    margin:2rem 2rem;
     @media(max-width:800px){
         width:10rem;
         height:15rem;
