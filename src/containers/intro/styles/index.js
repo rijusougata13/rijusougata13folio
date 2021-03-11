@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { keyframes } from 'styled-components';
 import {StyledHeading} from '../../../components/heading-text/styles/index';
 import {StyledSubHeading} from '../../../components/subHeading-text/styles/index';
 import BackgroundImage from '../../../assets/images/background.jpg';
@@ -68,16 +69,42 @@ export const ImgBody=styled.div`
 
 `
 
+
+const animate =keyframes`
+    
+0%{
+    
+    filter:hue-rotate(0deg);
+}
+100%{
+    filter:hue-rotate(360deg);
+}
+
+`;
 export const Heading =styled(StyledHeading)`
     padding:1rem;
     letter-spacing:.3rem;
+    color:#fff;
+    text-shadow:0 0 50px #0f0,
+                0 0 100px #0f0,
+                0 0 150px #0f0,
+                0 0 200px #0f0,
+                0 0 250px #0f0;
+
+    animation:${animate} 5s linear infinite;
+
+
+
+    
  @media(max-width:700px){
         font-size:1.5rem;
         letter-spacing:.1rem;
-    
+        text-shadow:50px 50px 50px #0f0;
+              
     }
     
-`
+`;
+
 
 export const SubHeading =styled(StyledSubHeading)`
         padding:1rem;

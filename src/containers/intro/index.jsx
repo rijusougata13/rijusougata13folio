@@ -7,6 +7,9 @@ import {IntroDiv,Wrappers,Heading,SubHeading,IntroImg,ImgBody,Wrapper,Button} fr
 import IntroImage from '../../assets/images/download.png';
 import StyledButton from '../../components/button/index';
 
+
+
+
 const intro=(props)=>{
     
     return (
@@ -46,7 +49,7 @@ const intro=(props)=>{
             {/* <Wrapper> */}
             <Wrappers>
             <SubHeading>Hey</SubHeading>
-            <Heading>I AM SOUGATA DAS</Heading>
+            <Heading className="Heading">I AM SOUGATA DAS</Heading>
             <Typed 
             className="TypedText"
             strings={["web-developer","competitive coder"]}

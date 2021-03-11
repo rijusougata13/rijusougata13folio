@@ -18,6 +18,8 @@ const projectPage=(props)=>{
   centerMode: true, // enable center mode
   centerPadding: '50px' // set center padding
 
+        
+
 };
     
     const projectArray=[

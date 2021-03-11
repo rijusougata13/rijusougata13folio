@@ -1,9 +1,10 @@
 import React from 'react';
-import {Heading,SubHeading,AboutText,Wrappers,AboutImg} from './ styles/index';
+import {Heading,SubHeading,AboutText,Wrappers,AboutImg,Wrapper} from './ styles/index';
 import AboutMeImg from '../../assets/images/aboutMeImg.png';
 
 const aboutMe=(props)=>{
     return(
+        <Wrapper>
         <Wrappers>
             <AboutText>
                 <Heading>Who Am I ?</Heading>
@@ -11,7 +12,7 @@ const aboutMe=(props)=>{
             </AboutText>
             <AboutImg src={AboutMeImg}/>
         </Wrappers>
-
+        </Wrapper>
     );
 }
 

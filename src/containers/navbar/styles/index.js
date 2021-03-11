@@ -12,6 +12,7 @@ export const Wrappers = styled.div`
     background: rgba(20,20,22,1);
     align-items:center;
     justify-content:space-between;
+    z-index:2;
 `;
 
 export const Button = styled(StyledButton)`
