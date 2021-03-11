@@ -16,8 +16,29 @@ const projectPage=(props)=>{
   slidesToShow: 3,
   slidesToScroll: 1,
   centerMode: true, // enable center mode
-  centerPadding: '50px' // set center padding
+  centerPadding: '50px', // set center padding
+  responsive:[
+    {
+    breakpoint:1024,
+    settings:{
+        slidesToShow:2,
+        slidesToScroll:3,
+        infinite:true,
+        dots:true,
+    }
+    }
+    ,
+    {
+        breakpoint:700,
+        settings:{
+            slidesToShow:2,
+            slidesToScroll:2,
+            initialSlide:2,
+        }
+        }
+    
 
+]
         
 
 };
@@ -62,7 +83,7 @@ const projectPage=(props)=>{
     ]
     return(
         // <Wrappers>
-        <SliderDiv>
+        <SliderDiv id="projects">
             <Slider {...config} >
         {
             projectArray.map(project=>(

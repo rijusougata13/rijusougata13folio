@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import {Wrappers,LeftSide,Hamburger,RightSide,Nav,Button}from './styles/index';
 import Logo from '../../assets/images/logo.png';
+import {Link} from 'react-scroll';
+
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -18,10 +20,10 @@ const Navbar = () => {
                     <span />
                 </Hamburger>
                 <RightSide isOpen={isOpen}>
-                    <Nav href="#">Home</Nav>
-                    <Nav href="#">About</Nav>
-                    <Nav href="#">Project</Nav>
-                    <Nav href="#">contact us</Nav>
+                    <Nav href="#"><Link  to="home" spy={true} smooth={true}>  Home </Link></Nav>
+                    <Nav href="#"> <Link  to="about" spy={true} smooth={true}>  About</Link></Nav>
+                    <Nav href="#"><Link  to="projects" spy={true} smooth={true}>  Project </Link></Nav>
+                    <Nav href="#"><Link  to="contact" spy={true} smooth={true}>  contact us</Link></Nav>
                 </RightSide>
            </Wrappers>
                 

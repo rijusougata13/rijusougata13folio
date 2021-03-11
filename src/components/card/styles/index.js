@@ -18,12 +18,13 @@ export const StyledCard=styled.div`
     @media(max-width:800px){
         width:10rem;
         height:15rem;
-        padding:0;
-        margin:0;
+        padding:2rem;
+        margin-left:2rem;
     }
 
-    @media(max-width:600px){
-        width:5rem;
+    @media(max-width:500px){
+        width:8rem;
+        margin-left:2rem;
     }
 `;
 
