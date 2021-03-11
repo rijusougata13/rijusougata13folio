@@ -2,7 +2,7 @@ import React from 'react';
 import Typed from 'react-typed';
 import AOS from 'aos';
 import Particles from 'react-particles-js';
-// import 'aos/dist/aos.css'; 
+import 'aos/dist/aos.css'; 
 import {IntroDiv,Wrappers,Heading,SubHeading,IntroImg,ImgBody,Wrapper,Button} from './styles/index';
 import IntroImage from '../../assets/images/download.png';
 import StyledButton from '../../components/button/index';
