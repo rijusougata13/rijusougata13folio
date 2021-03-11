@@ -183,7 +183,7 @@ export const Wrappers = styled.div`
     }
     ul li:nth-child(4){
         animation:${animate2} 10s linear  alternate infinite;
-        animation-delay:5s;
+        animation-delay:3s;
     }
 
 `;
