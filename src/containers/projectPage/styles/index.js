@@ -99,7 +99,7 @@ export const Button = styled(StyledButton)`
 ` ;
 
 export const SliderDiv=styled.div`
-
+    padding:2rem 0rem;
     background-color:#a4152c;
     transition:all .2s;
     width:100%;
@@ -114,7 +114,7 @@ export const SliderDiv=styled.div`
     .slick-dots{
         background-color:#a4152c;
         overflow: hidden;
-        height:4rem;
+        height:2rem;
 
         @media(max-width:800px){
             height:25px;

@@ -4,7 +4,7 @@ import AboutMeImg from '../../assets/images/aboutMeImg.png';
 
 const aboutMe=(props)=>{
     return(
-        <Wrapper>
+        <Wrapper id="about">
         <Wrappers>
             <AboutText>
                 <Heading>Who Am I ?</Heading>

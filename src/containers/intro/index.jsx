@@ -13,7 +13,7 @@ import StyledButton from '../../components/button/index';
 const intro=(props)=>{
     
     return (
-        <ImgBody>
+        <ImgBody id="home">
              <Particles
             
             style={{
