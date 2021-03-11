@@ -35,7 +35,7 @@ const animate =keyframes`
     
 }
 100%{
-    transform:translateY(35vh) translateX(35vw);
+    transform:translateY(35vh) translateX(28vw);
     
 }
 
@@ -46,7 +46,7 @@ const animate =keyframes`
 const animate2 =keyframes`
     
 0%{
-    transform:translateY(35vh) translateX(35vw);
+    transform:translateY(35vh) translateX(28vw);
     
 }
 
@@ -73,7 +73,7 @@ const animate2 =keyframes`
     
 }
 100%{
-    transform:translateY(45vh) translateX(-45vw);
+    transform:translateY(45vh) translateX(-30vw);
     
 }
 
@@ -175,7 +175,7 @@ export const Wrappers = styled.div`
     }
     ul li:nth-child(2){
         animation:${animate} 10s linear  alternate infinite;
-        animation-delay:3s;
+        animation-delay:1s;
     }
     ul li:nth-child(3){
         animation:${animate2} 10s linear  alternate infinite;
@@ -183,7 +183,7 @@ export const Wrappers = styled.div`
     }
     ul li:nth-child(4){
         animation:${animate} 10s linear  alternate infinite;
-        animation-delay:1s;
+        animation-delay:3s;
     }
 
 `;
