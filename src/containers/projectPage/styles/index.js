@@ -36,11 +36,16 @@ export const Heading =styled(StyledHeading)`
     box-sizing:border-box;
     padding:0rem 1rem;
     margin-top:-10rem;
- @media(max-width:700px){
+ @media(max-width:800px){
         margin-top:-2rem;
         font-size:1.2rem;
         padding:1rem;
         letter-spacing:0;
+    }
+
+    @media(max-width:600px){
+        font-size:.5rem;
+        letter-spacing:.2rem;
     }
     
 `
@@ -63,6 +68,11 @@ export const SubHeading =styled(StyledSubHeading)`
         margin-top:-2rem;
     }
 
+    @media(max-width:600px){
+        font-size:.5rem;
+        letter-spacing:.2rem;
+    }
+
 `
 export const Button = styled(StyledButton)`
     padding: 1.5rem;
@@ -81,19 +91,40 @@ export const Button = styled(StyledButton)`
         margin:0;
         padding:.5rem;
     }
+    @media(max-width:600px){
+        padding:0;
+        margin:0;
+        font-size:8px;
+    }
 ` ;
 
 export const SliderDiv=styled.div`
-   height:100%;
-    width:100%;
+
     background-color:#a4152c;
     transition:all .2s;
+    width:100%;
+    height:100%;
+    /* margin:2rem 2rem; */
+  
+    overflow: hidden;
     :focus{
         outline:none;
     }
 
     .slick-dots{
-        background-color:red;
+        background-color:#a4152c;
+        overflow: hidden;
+        height:4rem;
+
+        @media(max-width:800px){
+            height:25px;
+        }
+    }
+    
+    @media(max-width:800px){
+      padding-top:2rem;
+        padding-bottom:2rem;
+        width:100vw;
     }
     
 `;
