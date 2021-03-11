@@ -169,13 +169,13 @@ export const Wrappers = styled.div`
 
     ul li:nth-child(1){
         animation:${animate} 10s linear  alternate infinite;
-        animation-delay:0s;
+        animation-delay:1s;
 
         
     }
     ul li:nth-child(2){
         animation:${animate} 10s linear  alternate infinite;
-        animation-delay:1s;
+        animation-delay:2s;
     }
     ul li:nth-child(3){
         animation:${animate2} 10s linear  alternate infinite;
@@ -183,7 +183,7 @@ export const Wrappers = styled.div`
     }
     ul li:nth-child(4){
         animation:${animate} 10s linear  alternate infinite;
-        animation-delay:3s;
+        animation-delay:0s;
     }
 
 `;
