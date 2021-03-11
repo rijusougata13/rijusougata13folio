@@ -83,7 +83,9 @@ const projectPage=(props)=>{
     ]
     return(
         // <Wrappers>
+        
         <SliderDiv id="projects">
+            <p className="heading">MY PROJECTS </p> 
             <Slider {...config} >
         {
             projectArray.map(project=>(
@@ -99,7 +101,8 @@ const projectPage=(props)=>{
         }
         </Slider>
         </SliderDiv>
-        // </Wrappers>
+        //  </Wrappers>
+       
     );
 }
 

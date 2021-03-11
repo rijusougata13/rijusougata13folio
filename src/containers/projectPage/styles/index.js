@@ -28,14 +28,16 @@ export const Wrapper = styled.div`
 `;
 
 export const Heading =styled(StyledHeading)`
-    /* position:absolute; */
+
     color:goldenrod;
     font-weight:1000;
     letter-spacing:.4rem;
     font-size:2rem;
     box-sizing:border-box;
     padding:0rem 1rem;
-    margin-top:-10rem;
+    margin-top:2rem;
+    
+
  @media(max-width:800px){
         margin-top:-2rem;
         font-size:1.2rem;
@@ -103,9 +105,18 @@ export const SliderDiv=styled.div`
     background-color:#a4152c;
     transition:all .2s;
     width:100%;
-    height:100%;
-    /* margin:2rem 2rem; */
-  
+    height:100vh;
+    
+    .heading{
+        font-size:3rem;
+        font-weight:800;
+        color:goldenrod;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+    }
+
+
     overflow: hidden;
     :focus{
         outline:none;
