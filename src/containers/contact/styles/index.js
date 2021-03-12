@@ -8,12 +8,12 @@ import {StyledSubHeading} from '../../../components/subHeading-text/styles/index
 const animate =keyframes`
     
 0%{
-    transform:translateY(-40vh) translateX(-50vw);
+    transform:translateY(-5vh) translateX(-5vw);
     
 }
 
 25%{
-    transform:translateY(-25vh) translateX(-15vw);
+    transform:translateY(-5vh) translateX(-5vw);
     
 }
 
@@ -27,11 +27,11 @@ const animate =keyframes`
 }
 
 65%{
-    transform:translateY(10vh) translateX(15vw);
+    transform:translateY(10vh) translateX(25vw);
     
 }
 75%{
-    transform:translateY(30vh) translateX(25vw);
+    transform:translateY(30vh) translateX(35vw);
     
 }
 100%{
@@ -134,7 +134,7 @@ background-color:white;
 export const Wrappers = styled.div`
     border:10px solid black;
     position:relative;
-    margin:5rem 2rem;
+    margin:1rem 1rem;
     margin-top:1rem;
     display:flex;
     flex-direction:column;
@@ -143,12 +143,12 @@ export const Wrappers = styled.div`
     height:80vh;
     width:80vw;  
     background-color:red;
-    margin-left:5rem;
-    margin-right:5rem;
+    margin-left:1rem;
+    margin-right:1rem;
     overflow:hidden;
     ul{
         margin:0;
-        display:flex;
+        
         
     }
 
@@ -159,7 +159,7 @@ export const Wrappers = styled.div`
         height:50px;
         background-color:#fff;
         border-radius:50%;
-        margin:0 2rem;
+        margin:0 1rem;
         display:flex;
         align-items:center;
         justify-content:center;
@@ -169,13 +169,13 @@ export const Wrappers = styled.div`
 
     ul li:nth-child(1){
         animation:${animate} 10s linear  alternate infinite;
-        animation-delay:1s;
+        animation-delay:1.5s;
 
         
     }
     ul li:nth-child(2){
         animation:${animate} 10s linear  alternate infinite;
-        animation-delay:2s;
+        animation-delay:2.5s;
     }
     ul li:nth-child(3){
         animation:${animate2} 10s linear  alternate infinite;
@@ -183,16 +183,17 @@ export const Wrappers = styled.div`
     }
     ul li:nth-child(4){
         animation:${animate} 10s linear  alternate infinite;
-        animation-delay:0s;
+        animation-delay:1s;
+    }
+     ul li:nth-child(6){
+        animation:${animate2} 10s linear  alternate infinite;
+        animation-delay:3s;
     }
      ul li:nth-child(5){
         animation:${animate2} 10s linear  alternate infinite;
         animation-delay:1s;
     }
-     ul li:nth-child(6){
-        animation:${animate2} 10s linear  alternate infinite;
-        animation-delay:.5s;
-    }
+    
 
 `;
 
