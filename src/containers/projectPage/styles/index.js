@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled ,{css} from 'styled-components';
 import {StyledHeading} from '../../../components/heading-text/styles/index';
 import {StyledSubHeading} from '../../../components/subHeading-text/styles/index';
 import {StyledButton} from '../../../components/button/styles/index';
@@ -29,13 +29,14 @@ export const Wrapper = styled.div`
 
 export const Heading =styled(StyledHeading)`
 
+    text-transform:uppercase;
     color:goldenrod;
     font-weight:1000;
     letter-spacing:.4rem;
     font-size:2rem;
     box-sizing:border-box;
     padding:0rem 1rem;
-    margin-top:2rem;
+    margin-top:-8rem;
     
 
  @media(max-width:800px){
@@ -49,6 +50,7 @@ export const Heading =styled(StyledHeading)`
         font-size:.5rem;
         letter-spacing:.2rem;
     }
+    
     
 `
 
@@ -64,6 +66,9 @@ export const SubHeading =styled(StyledSubHeading)`
     margin-left:2rem;
     margin-right:2rem;
     overflow:hidden;
+    display:flex;
+    align-items:center;
+    justify-content:center;
     @media(max-width:900px){
         font-size:.9rem;
         padding:1rem;
@@ -76,13 +81,45 @@ export const SubHeading =styled(StyledSubHeading)`
     }
 
 `
+
+
+
 export const Button = styled(StyledButton)`
-    padding: 1.5rem;
+    padding: 1rem;
     transition: transform .3s;
     border-radius:20px;
     position:absolute;
     bottom:1rem;
     margin:2rem 2rem;
+
+    ${({change})=>
+
+        change &&
+        css`
+            position:absolute;
+            top:0;
+            right:0;
+            height:2rem;
+            align-items:center;
+            display:flex;
+
+
+             @media (max-width: 750px) {
+                top:2rem;
+                right:1rem;
+                border-radius:5px;
+                padding:1rem;
+        font-size: 10px;
+        bottom:1rem;
+        margin:0;
+        padding:.5rem;
+    }
+
+        `
+
+
+    }
+
     &:hover {
         cursor:pointer;
         transform: scale(1.1);
@@ -101,12 +138,26 @@ export const Button = styled(StyledButton)`
 ` ;
 
 export const SliderDiv=styled.div`
+    position:relative;
     padding:2rem 0rem;
     background-color:#a4152c;
     transition:all .2s;
     width:100%;
     height:100vh;
     
+    ${({open})=>
+
+        open &&
+        css`
+           background-color:#8339a3;
+
+
+        `
+
+
+    }
+
+
     .heading{
         font-size:3rem;
         font-weight:800;
@@ -114,6 +165,12 @@ export const SliderDiv=styled.div`
         display:flex;
         align-items:center;
         justify-content:center;
+        text-transform:uppercase;
+
+         @media(max-width:700px){
+        font-size:1.2rem;
+        padding:1rem;
+    }
     }
 
 
@@ -126,7 +183,13 @@ export const SliderDiv=styled.div`
         background-color:#a4152c;
         overflow: hidden;
         height:2rem;
+          ${({open})=>
 
+        open &&
+        css`
+           background-color:#8339a3;
+        `
+    }
         @media(max-width:800px){
             height:25px;
         }

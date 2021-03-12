@@ -7,4 +7,5 @@ export const StyledButton = styled.button`
     font-weight: bolder;
     padding:1rem 1.5rem;
     border: none;
+    outline:none;
 `;

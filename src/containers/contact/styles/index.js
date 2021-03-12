@@ -185,6 +185,14 @@ export const Wrappers = styled.div`
         animation:${animate} 10s linear  alternate infinite;
         animation-delay:0s;
     }
+     ul li:nth-child(5){
+        animation:${animate2} 10s linear  alternate infinite;
+        animation-delay:1s;
+    }
+     ul li:nth-child(6){
+        animation:${animate2} 10s linear  alternate infinite;
+        animation-delay:.5s;
+    }
 
 `;
 

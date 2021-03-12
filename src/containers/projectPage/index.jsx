@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState} from 'react';
 import {Wrappers,Heading,Button,SubHeading,Wrapper,SliderDiv}from './styles/index';
 import Card from '../../components/card/index';
 import Slider from "react-slick";
@@ -7,7 +7,9 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const projectPage=(props)=>{
+const ProjectPage=(props)=>{
+
+    const [isOpen,setIsOpen]=useState(false);
 
     const config = {
   dots: true,
@@ -45,49 +47,80 @@ const projectPage=(props)=>{
     
     const projectArray=[
         {
-            "heading":"github",
-            "body":"follow me",
-            "link":"github.com",
+            "heading":"hangman",
+            "body":"play a text based hangman game with your friends",
+            "link":"https://github.com/rijusougata13/hangman",
         },
         {
-            "heading":"github2",
-            "body":"follow me 2",
-            "link":"github.com2",
+            "heading":"PDFTOAUDIO",
+            "body":"convert your pdf to audio format",
+            "link":"https://github.com/rijusougata13/pdf_to_audio",
         },
         {
-            "heading":"github2",
-            "body":"follow me 2",
-            "link":"github.com2",
+            "heading":"RCCNOTICE",
+            "body":"rcc iit college notice board scrapper",
+            "link":"https://github.com/rijusougata13/rcc_collge_notice_web_scrapper",
         },
         {
-            "heading":"github2",
-            "body":"follow me 2",
-            "link":"github.com2",
+            "heading":"SnakePro",
+            "body":"A different level snake game(only for pros)",
+            "link":"https://github.com/rijusougata13/snake_game_modified_version",
         },
         {
-            "heading":"github2",
-            "body":"follow me 2",
-            "link":"github.com2",
+            "heading":"Movie Recommender",
+            "body":"A recommender web app for movies",
+            "link":"https://github.com/rijusougata13/movie-recommender",
         },
         {
-            "heading":"github2",
-            "body":"follow me 2",
-            "link":"github.com2",
+            "heading":"NetflixClone",
+            "body":"Tried to clone netflix",
+            "link":"https://github.com/rijusougata13/netflix-clone",
         },
         {
-            "heading":"github2",
-            "body":"follow me 2",
-            "link":"github.com2",
+            "heading":"GrandHotel",
+            "body":"A hotel website with html and css only",
+            "link":"https://github.com/rijusougata13/hotelGrand",
         },
        
     ]
+
+
+      const competitivetArray=[
+        {
+            "heading":"codechef",
+            "body":"hey click here to visit my codechef profile",
+            "link":"https://www.codechef.com/users/rijusougata13",
+        },
+        {
+            "heading":"codeforces",
+            "body":"hey click here to visit my codeforces profile",
+            "link":"https://codeforces.com/profile/rijusougata13",
+        },
+        {
+            "heading":"atcoder",
+            "body":"hey click here to visit my atcoder profile",
+            "link":"https://atcoder.jp/users/rijusougata13",
+        },
+         {
+            "heading":"hackerearth",
+            "body":"hey click here to visit my hackerearth profile",
+            "link":"https://www.hackerearth.com/@rijusougata13",
+        },
+       
+    ]
+        var open;
     return(
         // <Wrappers>
-        
-        <SliderDiv id="projects">
-            <p className="heading">MY PROJECTS </p> 
-            <Slider {...config} >
+  
+        <SliderDiv  open={isOpen} id="projects">
+         { isOpen ? <p className="heading">MY PROJECTS </p>:<p className="heading">competitive coding </p> }
+            <Button change onClick={()=>setIsOpen(!isOpen)} >Toggle</Button>
+
+            
+            <Slider {...config}  >
         {
+           isOpen ?(
+
             projectArray.map(project=>(
                 <Card>
                 <Wrapper>
@@ -96,8 +129,21 @@ const projectPage=(props)=>{
                 </Wrapper>
                 <Button>Read More</Button>
            
-            </Card>
+                </Card>
             ))
+           ) :(
+               competitivetArray.map(project=>(
+                <Card>
+                <Wrapper>
+                <Heading>{project.heading}</Heading>
+                <SubHeading>{project.body}</SubHeading>
+                </Wrapper>
+                <Button onClick={event =>  window.location.href=project.link} >Visit There</Button>
+           
+                </Card>
+            ))
+           )
+           
         }
         </Slider>
         </SliderDiv>
@@ -106,4 +152,4 @@ const projectPage=(props)=>{
     );
 }
 
-export default projectPage;
+export default ProjectPage;

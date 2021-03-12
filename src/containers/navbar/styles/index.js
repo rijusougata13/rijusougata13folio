@@ -40,8 +40,8 @@ export const Button = styled(StyledButton)`
     position:fixed;
     z-index:10;
     flex-direction: column;
-    background-color:#303030;
-
+    background:linear-gradient(rgba(34, 32, 42, 1), rgba(34, 32, 41, .2));
+    height:110vh;
     justify-content:space-between;
 
     box-sizing:border-box;

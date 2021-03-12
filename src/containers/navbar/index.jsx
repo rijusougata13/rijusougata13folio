@@ -23,7 +23,7 @@ const Navbar = () => {
                     <Nav href="#"><Link  to="home" activeClass spy={true} smooth={true}>  Home </Link></Nav>
                     <Nav href="#"> <Link  to="about" spy={true} smooth={true}>  About</Link></Nav>
                     <Nav href="#"><Link  to="projects" spy={true} smooth={true}>  Project </Link></Nav>
-                    <Nav href="#"><Link  to="contact" spy={true} smooth={true}>  contact us</Link></Nav>
+                    <Nav href="#"><Link  to="contact" spy={true} smooth={true}>  contact</Link></Nav>
                 </RightSide>
            </Wrappers>
                 

@@ -4,6 +4,8 @@ import Intro from './containers/intro/index';
 import AboutMe from './containers/aboutMe/index';
 import ProjectPage from './containers/projectPage/index';
 import Contact from './containers/contact/index';
+import Creator from './containers/creator/index';
+import Feedback from './containers/feedback';
 
 const Wrapper=styled.div`
   margin:0 0 !important;
@@ -33,6 +35,8 @@ function App() {
      <AboutMe/>
      <ProjectPage/>
      <Contact/>
+     {/* <Feedback/> */}
+     <Creator/>
     </Wrapper>
   );
 }
