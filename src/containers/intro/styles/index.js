@@ -163,7 +163,7 @@ export const Wrapper = styled.div`
 export const IntroImg=styled.img`
     width:25rem;
     height:30rem;
-
+    transform:rotate(60deg);
     @media(max-width:1000px){
         width:10rem;
         height:10rem;

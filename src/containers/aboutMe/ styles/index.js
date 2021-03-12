@@ -150,6 +150,7 @@ export const AboutImg=styled.img`
     width:15rem;
     margin-left:-13rem;
     z-index:1;
+    transform:rotateY(-15deg) rotate3d(50deg);
     @media(max-width:900px){
         height:50%;
         width:8rem;
