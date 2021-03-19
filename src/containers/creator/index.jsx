@@ -1,3 +1,6 @@
+import React,{useEffect} from 'react';
+import Aos from 'aos';
+import "aos/dist/aos.css";
 import {Creator } from './styles/index.js';
 import {FaHeart} from "react-icons/fa";
 

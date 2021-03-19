@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled,{css} from 'styled-components';
 import { keyframes } from 'styled-components';
 import {StyledHeading} from '../../../components/heading-text/styles/index';
 import {StyledSubHeading} from '../../../components/subHeading-text/styles/index';
@@ -45,11 +45,21 @@ export const Button=styled(StyledButton)`
 
 export const ImgBody=styled.div`
     height:100vh;
-    width:vw;
+    
     background: url(${BackgroundImage}) no-repeat ;
     background-size: 100% 100%;
-
     position:relative;
+
+   
+
+      ${({open})=>
+        open &&
+        css`
+    z-index:100;
+    width:100vw;
+    position:fixed !important;
+        `
+    }
     .overlay  {
         position:relative;
         width:100%;

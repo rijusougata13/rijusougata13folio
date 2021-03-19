@@ -128,7 +128,7 @@ align-items:center;
 justify-content:center;
 height:100%;
 width:100%;  
-background-color:white;
+background-color:#C07B76;
 `;
 
 export const Wrappers = styled.div`
@@ -142,7 +142,7 @@ export const Wrappers = styled.div`
     justify-content:center;
     height:80vh;
     width:80vw;  
-    background-color:red;
+    background-color:#93A6A5;
     margin-left:1rem;
     margin-right:1rem;
     overflow:hidden;

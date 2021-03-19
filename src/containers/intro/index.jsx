@@ -1,4 +1,6 @@
-import React from 'react';
+import React,{useEffect,useState} from 'react';
+import Aos from 'aos';
+import "aos/dist/aos.css";
 import Typed from 'react-typed';
 import AOS from 'aos';
 import Particles from 'react-particles-js';
@@ -10,10 +12,12 @@ import StyledButton from '../../components/button/index';
 
 
 
-const intro=(props)=>{
+const Intro=(props)=>{
     
+    const [open,setIsOpen]=useState(0);
+    // console.log(open)
     return (
-        <ImgBody id="home">
+        <ImgBody id="home" open>
              <Particles
             
             style={{
@@ -48,8 +52,8 @@ const intro=(props)=>{
         <div className='overlay'>
             {/* <Wrapper> */}
             <Wrappers>
-            <SubHeading>Hey</SubHeading>
-            <Heading className="Heading">I AM SOUGATA DAS</Heading>
+            <SubHeading onClick={props.trigger}>Hey</SubHeading>
+            <Heading className="Heading" >I AM SOUGATA DAS</Heading>
             <Typed 
             className="TypedText"
             strings={["web-developer","competitive coder"]}
@@ -69,4 +73,4 @@ const intro=(props)=>{
     </ImgBody>
     );
 }
-export default intro;
+export default Intro;
