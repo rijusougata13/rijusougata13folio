@@ -1,8 +1,9 @@
 import React,{useEffect} from 'react';
-import {Heading,SubHeading,AboutText,Wrappers,AboutImg,Wrapper} from './ styles/index';
-import AboutMeImg from '../../assets/images/aboutMeImg.png';
 import Aos from 'aos';
 import "aos/dist/aos.css";
+import {Heading,SubHeading,AboutText,Wrappers,AboutImg,Wrapper} from './ styles/index';
+import AboutMeImg from '../../assets/images/aboutMeImg.png';
+
 
 const AboutMe=(props)=>{
   

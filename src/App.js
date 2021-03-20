@@ -7,6 +7,7 @@ import Contact from './containers/contact/index';
 import Creator from './containers/creator/index';
 import Feedback from './containers/feedback';
 import React,{useState} from 'react';
+import { Link, animateScroll as scroll } from "react-scroll";
 
 
 const Wrapper=styled.div`
@@ -32,21 +33,26 @@ window.onbeforeunload = function () {
 
 function App() {
 
-const [state, setState] = useState(false);
+const [statee, setState] = useState(false);
 const   triggerState = ()=> {
     setState(true);
+   scroll.scrollToBottom();
 }
 
   return (
     <Wrapper>
-     <Navbar/>
-      
+     {/* <Navbar/> */}
+     {statee?<Navbar/>:null} 
      <Intro clicked={ScrollHandler} trigger={triggerState} />
-     <AboutMe/>
-     <ProjectPage/>
-     <Contact/>
+     {statee?<AboutMe/>:null} 
+     
+     {statee?<ProjectPage/>:null} 
+     
+     {statee?<Contact/>:null} 
+     
      {/* <Feedback/> */}
-     <Creator/>
+      {statee?<Creator/>:null} 
+     
     </Wrapper>
   );
 }

@@ -183,7 +183,7 @@ export const SliderDiv=styled.div`
         background-color:#a4152c;
         overflow: hidden;
         height:2rem;
-          ${({open})=>
+        ${({open})=>
 
         open &&
         css`
@@ -196,9 +196,10 @@ export const SliderDiv=styled.div`
     }
     
     @media(max-width:800px){
-      padding-top:2rem;
+         padding-top:2rem;
         padding-bottom:2rem;
         width:100vw;
+        height:100%;
     }
     
 `;
