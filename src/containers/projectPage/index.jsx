@@ -1,4 +1,6 @@
-import React,{useState} from 'react';
+import React,{useEffect,useState} from 'react';
+import Aos from 'aos';
+import "aos/dist/aos.css";
 import {Wrappers,Heading,Button,SubHeading,Wrapper,SliderDiv}from './styles/index';
 import Card from '../../components/card/index';
 import Slider from "react-slick";
@@ -8,6 +10,10 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const ProjectPage=(props)=>{
+
+       useEffect(()=>{
+        Aos.init({duration:2000});
+    },[]);
 
     const [isOpen,setIsOpen]=useState(false);
 
@@ -110,22 +116,24 @@ const ProjectPage=(props)=>{
     ]
         var open;
     return(
+
+
         // <Wrappers>
   
-        <SliderDiv  open={isOpen} id="projects">
-         { isOpen ? <p className="heading">MY PROJECTS </p>:<p className="heading">competitive coding </p> }
+        <SliderDiv  open={isOpen} id="projects"  >
+         { isOpen ? <p className="heading" ><div data-aos="fade-left">MY PROJECTS</div> </p>:<p className="heading" ><div data-aos="fade-right">competitive coding</div> </p> }
             <Button change onClick={()=>setIsOpen(!isOpen)} >Toggle</Button>
 
             
-            <Slider {...config}  >
+            <Slider {...config} >
         {
            isOpen ?(
 
             projectArray.map(project=>(
-                <Card>
-                <Wrapper>
-                <Heading>{project.heading}</Heading>
-                <SubHeading>{project.body}</SubHeading>
+                <Card >
+                <Wrapper >
+                <Heading data-aos="fade-down-right">{project.heading}</Heading>
+                <SubHeading data-aos="fade-up-left">{project.body}</SubHeading>
                 </Wrapper>
                 <Button>Read More</Button>
            
@@ -135,8 +143,8 @@ const ProjectPage=(props)=>{
                competitivetArray.map(project=>(
                 <Card>
                 <Wrapper>
-                <Heading>{project.heading}</Heading>
-                <SubHeading>{project.body}</SubHeading>
+                <Heading data-aos="fade-down-right">{project.heading}</Heading>
+                <SubHeading data-aos="fade-up-left">{project.body}</SubHeading>
                 </Wrapper>
                 <Button onClick={event =>  window.location.href=project.link} >Visit There</Button>
            

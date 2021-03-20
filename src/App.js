@@ -6,6 +6,8 @@ import ProjectPage from './containers/projectPage/index';
 import Contact from './containers/contact/index';
 import Creator from './containers/creator/index';
 import Feedback from './containers/feedback';
+import React,{useState} from 'react';
+
 
 const Wrapper=styled.div`
   margin:0 0 !important;
@@ -27,11 +29,19 @@ window.onbeforeunload = function () {
   window.scrollTo(0, 0);
 }
 
+
 function App() {
+
+const [state, setState] = useState(false);
+const   triggerState = ()=> {
+    setState(true);
+}
+
   return (
     <Wrapper>
      <Navbar/>
-     <Intro clicked={ScrollHandler}/>
+      
+     <Intro clicked={ScrollHandler} trigger={triggerState} />
      <AboutMe/>
      <ProjectPage/>
      <Contact/>

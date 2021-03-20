@@ -17,7 +17,7 @@ export const Wrappers = styled.div`
     display:flex;
     flex-direction:row;
     align-items:center;
-    background-color:whitesmoke;
+    background-color:#bd4d2a;
     margin:0rem 0rem;
     padding:0 0;
     justify-content:center;
@@ -89,7 +89,7 @@ export const Wrappers = styled.div`
 
 export const Heading =styled(StyledHeading)`
 
-    color:#1c100f;
+    color:#D8AF74;
     font-weight:1000;
     letter-spacing:.4rem;
     font-size:1.8rem;
@@ -103,7 +103,7 @@ export const Heading =styled(StyledHeading)`
 export const SubHeading =styled(StyledSubHeading)`
         padding:2rem;
         font-size: 2rem;
-        color:#fff;
+        color:#E68769;
         font-weight:500;
     @media(max-width:900px){
         font-size:1rem;
@@ -117,8 +117,8 @@ export const AboutText=styled.div`
     /* position:absolute; */
     max-height:50%;
     width:80%;
-    background-color:#8e8e9b;
-    color:white;
+    background-color:#2B393F;
+    color:#151F31;
     padding-top:2rem;
     padding-bottom:2rem;
     margin-left:2rem;
