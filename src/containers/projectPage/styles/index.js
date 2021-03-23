@@ -143,7 +143,7 @@ export const SliderDiv=styled.div`
     background-color:#a4152c;
     transition:all .2s;
     width:100%;
-    height:100vh;
+    height:100%;
     
     ${({open})=>
 

@@ -1,5 +1,4 @@
-
-import styled,{css} from 'styled-components';
+import styled from 'styled-components';
 import { keyframes } from 'styled-components';
 import {StyledHeading} from '../../../components/heading-text/styles/index';
 import {StyledSubHeading} from '../../../components/subHeading-text/styles/index';
@@ -25,6 +24,7 @@ export const Button=styled(StyledButton)`
       color:#333;
       letter-spacing: .1rem;
       border:none;
+      
       border-radius: 10rem;
       outline: none;
       background:linear-gradient(to right, gold, goldenrod);
@@ -37,9 +37,9 @@ export const Button=styled(StyledButton)`
     background:linear-gradient(to right, goldenrod, gold);
 }
     :focus{
-        /* transform:scale(10,100) ;  */
-        
+        /* transform:scaleY(81.0) scaleX(10);  */
         opacity:0;
+        
         background-color:goldenrod;
         
     }
@@ -47,21 +47,11 @@ export const Button=styled(StyledButton)`
 
 export const ImgBody=styled.div`
     height:100vh;
-    
+    width:vw;
     background: url(${BackgroundImage}) no-repeat ;
     background-size: 100% 100%;
+
     position:relative;
-
-   
-
-      ${({open})=>
-        open &&
-        css`
-    z-index:100;
-    width:100vw;
-    position:fixed !important;
-        `
-    }
     .overlay  {
         position:relative;
         width:100%;
@@ -175,8 +165,10 @@ export const Wrapper = styled.div`
 export const IntroImg=styled.img`
     width:25rem;
     height:30rem;
+    
     @media(max-width:1000px){
         width:10rem;
         height:10rem;
     }
 `;
+
