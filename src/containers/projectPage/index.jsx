@@ -147,10 +147,10 @@ const ProjectPage=(props)=>{
                 <Wrapper >
                 
                 <img src={project.img}/>
-                <Heading data-aos="fade-down-right">{project.heading}</Heading>
-                <SubHeading data-aos="fade-up-left">{project.body}</SubHeading>
+                <Heading>{project.heading}</Heading>
+                <SubHeading >{project.body}</SubHeading>
                 </Wrapper>
-                <Button>Read More</Button>
+                <Button onClick={event =>  window.location.href=project.link} >Visit There</Button>
            
                 </Card>
             ))
@@ -159,8 +159,8 @@ const ProjectPage=(props)=>{
                 <Card>
                 <Wrapper>
                 <img src={comp.img}/>
-                <Heading data-aos="fade-down-right">{comp.heading}</Heading>
-                <SubHeading data-aos="fade-up-left">{comp.body}</SubHeading>
+                <Heading >{comp.heading}</Heading>
+                <SubHeading >{comp.body}</SubHeading>
                 </Wrapper>
                 <Button onClick={event =>  window.location.href=comp.link} >Visit There</Button>
            
