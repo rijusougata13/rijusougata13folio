@@ -76,7 +76,7 @@ export const Nav = styled.a`
     text-decoration: none;
     padding:1rem 1rem;
     transition: .3s ease-in;
-
+    
     &:hover{
         color: goldenrod;
     }
