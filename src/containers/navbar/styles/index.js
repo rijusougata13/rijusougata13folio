@@ -48,7 +48,8 @@ export const Button = styled(StyledButton)`
     padding:10rem 2rem 10rem 4rem;
     max-width: ${({ isOpen }) => (isOpen ? "300px" : "0")}; 
     opacity: ${({ isOpen }) => (isOpen ? "1" : "0")}; 
-   
+    transform: translateX(${({ isOpen }) => (isOpen ? "0rem" : "-10rem")}) ; 
+    
   
     }
 `

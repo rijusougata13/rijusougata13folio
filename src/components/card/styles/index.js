@@ -4,7 +4,7 @@ import styled from 'styled-components';
 export const StyledCard=styled.div`
     position:relative;
     width:20rem;
-    height:35rem;
+    height:30rem;
     background-color:#1e1e26;
     border-radius:10px;
     display:flex;

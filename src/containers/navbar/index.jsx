@@ -24,7 +24,7 @@ const Navbar = () => {
                     <Nav href="#"> <Link  to="about" spy={true} smooth={true}>  About</Link></Nav>
                     <Nav href="#"><Link  to="projects" spy={true} smooth={true}>  Project </Link></Nav>
                     <Nav href="#"><Link  to="contact" spy={true} smooth={true}>  Contact</Link></Nav>
-                    <Nav href="/Resume.docx" download="inddex.docx"> Resume </Nav>
+                    {/* <Nav href="/Resume.docx" download="inddex.docx"> Resume </Nav> */}
                 </RightSide>
            </Wrappers>
                 

@@ -31,7 +31,7 @@ const ProjectPage=(props)=>{
     breakpoint:1024,
     settings:{
         slidesToShow:2,
-        slidesToScroll:3,
+        slidesToScroll:1,
         infinite:true,
         dots:true,
     }
@@ -40,9 +40,9 @@ const ProjectPage=(props)=>{
     {
         breakpoint:700,
         settings:{
-            slidesToShow:2,
-            slidesToScroll:2,
-            initialSlide:2,
+            slidesToShow:1.5,
+            slidesToScroll:1,
+            initialSlide:1,
         }
         }
     

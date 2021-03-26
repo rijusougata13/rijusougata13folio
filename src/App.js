@@ -6,6 +6,7 @@ import ProjectPage from './containers/projectPage/index';
 import Contact from './containers/contact/index';
 import Creator from './containers/creator/index';
 import Feedback from './containers/feedback';
+import Skill from './containers/skills/index';
 import React,{useState} from 'react';
 import { Link, animateScroll as scroll } from "react-scroll";
 
@@ -45,13 +46,15 @@ const   triggerState = ()=> {
      {statee?<Navbar/>:null} 
      <Intro clicked={ScrollHandler} trigger={triggerState} />
      {statee?<AboutMe/>:null} 
-     
+     {statee?<Skill/>:null} 
      {statee?<ProjectPage/>:null} 
      
      {statee?<Contact/>:null} 
      
      {/* <Feedback/> */}
-      {statee?<Creator/>:null} 
+      {statee?<Creator/>:null}
+    
+   
      
     </Wrapper>
   );

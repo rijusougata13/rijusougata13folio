@@ -12,6 +12,42 @@ export const Wrapper=styled.div`
 `;
 
 
+export const Button = styled(StyledButton)`
+    padding: 1rem;
+    transition: transform .3s;
+    border-radius:20px;
+    position:absolute;
+    bottom:1rem;
+    margin:2rem 2rem;
+    z-index:1;
+   
+    a{
+        color:red;
+        text-decoration:none;
+    }
+
+    &:hover {
+        cursor:pointer;
+        transform: scale(1.1);
+    }
+     @media(max-width:900px){
+        top:25rem;
+        bottom:25rem;
+        left:50%;
+        padding:1rem;
+        margin:0;
+        font-size:10px;
+    }
+    @media(max-width:600px){
+        top:25rem;
+        bottom:25rem;
+        left:50%;
+        padding:1rem;
+        margin:0;
+        font-size:10px;
+    }
+` ;
+
 export const Wrappers = styled.div`
     height:80vh;
     display:flex;
