@@ -4,19 +4,30 @@ import {StyledSubHeading} from '../../../components/subHeading-text/styles/index
 import {StyledButton} from '../../../components/button/styles/index';
 
 export const Wrappers = styled.div`
-    height:100%;
+    height:100vh;
     width:100%;
-    background-color:#a4152c;
+    background-color:#413E62;
     display:flex;
     justify-content:center;
     align-items:center;
     flex-wrap:wrap;
-    /* z-index:-100; */
     
-    /* flex-direction:row; */
+
+    .svg{
+        top:0rem;
+        color:blue;
+        position:relative;
+        @media(max-width:1000px){
+            top:4rem;
+        }
+        @media(max-width:800px){
+            top:0rem;
+        }
+    }
 `;
 
 export const Wrapper = styled.div`
+
     height:100%;
     max-width:100%; 
     position:absolute;
@@ -25,6 +36,8 @@ export const Wrapper = styled.div`
     flex-direction:column;
     justify-content:space-evenly;
     align-items:center;
+
+    
 `;
 
 export const Heading =styled(StyledHeading)`
@@ -140,16 +153,16 @@ export const Button = styled(StyledButton)`
 export const SliderDiv=styled.div`
     position:relative;
     padding:2rem 0rem;
-    background-color:#a4152c;
+    background-color:#413E62;
     transition:all .2s;
     width:100%;
-    height:100%;
-    
+    height:100vh;
+    margin-top:10rem;
     ${({open})=>
 
         open &&
         css`
-           background-color:#8339a3;
+           background-color:#413E62;
 
 
         `
@@ -180,14 +193,14 @@ export const SliderDiv=styled.div`
     }
 
     .slick-dots{
-        background-color:#a4152c;
+        background-color:#413E62;
         overflow: hidden;
         height:2rem;
         ${({open})=>
 
         open &&
         css`
-           background-color:#8339a3;
+           background-color:#294192;
         `
     }
         @media(max-width:800px){

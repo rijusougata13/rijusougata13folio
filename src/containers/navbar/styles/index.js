@@ -5,7 +5,7 @@ import React , {useState} from 'react';
 
 export const Wrappers = styled.div`
    position:fixed;
-    z-index:1;
+    z-index:10 !important;
     width:100%;
     display: flex;
     flex-direction: row;

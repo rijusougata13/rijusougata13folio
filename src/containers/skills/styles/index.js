@@ -9,7 +9,7 @@ export const Wrappers = styled.div`
     height:130vh;
     width:100%;
     position:relative;
-    background-color:red;
+    background-color:#0F0644;
     display:flex;
     flex-direction:column;
     align-items:center;
@@ -31,11 +31,11 @@ export const SkillTab2=styled.div`
     /* align-items:right !important; */
     width:100%;
     height:100%;
-    background-color:green;
+    background-color:#95A6B9;
     color:red;
     position:absolute;
     font-size:2rem;
-   clip-path:circle(20% at 100% 100%);
+    clip-path: polygon(100% 0, 59% 0, 39% 100%, 100% 100%);
     transition:clip-path 1s;
      list-style:none;
     padding:0;
@@ -95,7 +95,7 @@ export const SkillTab2=styled.div`
     }
 
     &:hover{
-       clip-path:circle(110% at 100% 100%);
+        clip-path: polygon(100% 0, 14% 0, 14% 100%, 100% 100%);
     } 
 
 
@@ -108,11 +108,11 @@ export const SkillTab1=styled.div`
     width:100%;
     height:100%;
     flex-direction:column;
-    background-color:green;
+    background-color:#7299C8;
     color:red;
     font-size:2rem;
     padding:2rem 2rem;
-    clip-path:circle(20% at 0% 0%);
+    clip-path: polygon(0 0, 61% 0, 43% 100%, 0 100%);
     transition:clip-path 1s;
     list-style:none;
     padding:0;
@@ -173,7 +173,8 @@ export const SkillTab1=styled.div`
 
     
     &:hover{
-       clip-path:circle(110% at 0% 0%);
+        clip-path: polygon(0 0, 85% 0, 85% 100%, 0% 100%);
+        z-index: 3 !important;
     } 
 
         /* &:hover+${SkillTab2}{
@@ -185,7 +186,7 @@ export const SkillTab1=styled.div`
 
 
 export const Wrapper = styled.div`
-    background-color:blue;
+    background-color:#145866;
     display:flex;
     width:100%;
     height:100vh;
@@ -196,10 +197,7 @@ export const Wrapper = styled.div`
     margin-top:10rem;
     transition:all 1s;
     position: relative;
-    &:hover{
-        background-color:pink;
-    }
-
+  
 
     .backend{
         position:absolute;

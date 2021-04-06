@@ -47,7 +47,7 @@ export const Button=styled(StyledButton)`
 
 export const ImgBody=styled.div`
     height:100vh;
-    width:vw;
+    width:100%;
     background: url(${BackgroundImage}) no-repeat ;
     background-size: 100% 100%;
 
