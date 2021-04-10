@@ -25,7 +25,7 @@ export const Wrapper=styled.div`
     }
     .svgBottom{
        
-        top:102%;
+        top:100%;
         color:blue;
         position:relative;
         @media(max-width:1100px){
@@ -38,7 +38,7 @@ export const Wrapper=styled.div`
             top:100%;
         }
         @media(max-width:800px){
-            top:100%;
+            top:0%;
         }
     }
 

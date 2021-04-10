@@ -93,7 +93,7 @@ const colorChange =keyframes`
 `;
 export const Heading =styled(StyledHeading)`
 
-    margin-top:5rem;
+    margin-bottom:5rem;
     color:#1c100f;
     font-weight:1000;
     letter-spacing:.4rem;
@@ -127,9 +127,10 @@ display:flex;
 flex-direction:column;
 align-items:center;
 justify-content:center;
-height:100%;
+margin-top:10rem;
+height:150vh;
 width:100%;  
-background-color:#C07B76;
+background-color:#141A16;
 `;
 
 export const Wrappers = styled.div`
@@ -143,7 +144,7 @@ export const Wrappers = styled.div`
     justify-content:center;
     height:80vh;
     width:80vw;  
-    background-color:#93A6A5;
+    background-color:#776082;
     margin-left:1rem;
     margin-right:1rem;
     overflow:hidden;

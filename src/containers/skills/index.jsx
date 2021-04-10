@@ -12,31 +12,31 @@ const Skill=(props)=>{
                 
                  <h2>FrontEnd</h2>
                 <li>
-                    Html
+                    Html<span className="bar"><span className="html"></span></span>
                 </li>
                 <li>
-                    Css
+                    Css<span className="bar"><span className="css"></span></span>
                 </li>
                 <li>
-                    Js
+                    Js<span className="bar"><span className="js"></span></span>
                 </li>
                 <li>
-                    React
+                    React<span className="bar"><span className="react"></span></span>
                 </li>
             </SkillTab1>
             <SkillTab2>
                  <h2>BackEnd</h2>
                 <li>
-                    Python
+                    Python<span className="bar"><span className="python"></span></span>
                 </li>
                 <li>
-                   Flask
+                   Flask<span className="bar"><span className="flask"></span></span>
                 </li>
                 <li>
-                    Node Js
+                    Node Js<span className="bar"><span className="node"></span></span>
                 </li>
                 <li>
-                     Django
+                     Django<span className="bar"><span className="django"></span></span>
                 </li>
             </SkillTab2>
             </Wrapper>

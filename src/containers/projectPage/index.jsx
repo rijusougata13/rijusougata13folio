@@ -131,7 +131,6 @@ const ProjectPage=(props)=>{
         // <div>
          
          <Wrappers>
-  
         <SliderDiv  open={isOpen} id="projects"  >
          { isOpen ? <p className="heading" ><div data-aos="fade-left">MY PROJECTS</div> </p>:<p className="heading" ><div data-aos="fade-right">competitive coding</div> </p> }
             <Button change onClick={()=>setIsOpen(!isOpen)} >Toggle</Button>

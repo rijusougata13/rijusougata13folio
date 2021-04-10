@@ -12,7 +12,6 @@ export const Wrappers = styled.div`
     align-items:center;
     flex-wrap:wrap;
     
-
     .svg{
         top:0rem;
         color:blue;
@@ -23,6 +22,9 @@ export const Wrappers = styled.div`
         @media(max-width:800px){
             top:0rem;
         }
+    }
+    @media(max-width:800px){
+        height:60vh;
     }
 `;
 
@@ -41,7 +43,6 @@ export const Wrapper = styled.div`
 `;
 
 export const Heading =styled(StyledHeading)`
-
     text-transform:uppercase;
     color:goldenrod;
     font-weight:1000;
@@ -51,14 +52,12 @@ export const Heading =styled(StyledHeading)`
     padding:0rem 1rem;
     margin-top:-8rem;
     
-
  @media(max-width:800px){
         margin-top:-2rem;
         font-size:1.2rem;
         padding:1rem;
         letter-spacing:0;
     }
-
     @media(max-width:600px){
         font-size:.5rem;
         letter-spacing:.2rem;
@@ -66,6 +65,7 @@ export const Heading =styled(StyledHeading)`
     
     
 `
+
 
 export const SubHeading =styled(StyledSubHeading)`
     /* position:absolute; */
@@ -181,8 +181,9 @@ export const SliderDiv=styled.div`
         text-transform:uppercase;
 
          @media(max-width:700px){
-        font-size:1.2rem;
+        font-size:2rem;
         padding:1rem;
+        /* margin-top:-4rem; */
     }
     }
 
@@ -200,7 +201,7 @@ export const SliderDiv=styled.div`
 
         open &&
         css`
-           background-color:#294192;
+           background-color:#413E62;
         `
     }
         @media(max-width:800px){
@@ -209,10 +210,10 @@ export const SliderDiv=styled.div`
     }
     
     @media(max-width:800px){
-         padding-top:2rem;
-        padding-bottom:2rem;
+         padding-top:0rem;
+        padding-bottom:5rem;
         width:100vw;
         height:100%;
     }
-    
+  
 `;

@@ -32,7 +32,7 @@ export const SkillTab2=styled.div`
     width:100%;
     height:100%;
     background-color:#95A6B9;
-    color:red;
+    color:#313B6B;
     position:absolute;
     font-size:2rem;
     clip-path: polygon(100% 0, 59% 0, 39% 100%, 100% 100%);
@@ -63,6 +63,8 @@ export const SkillTab2=styled.div`
     }
 
     .bar{
+        position:absolute;
+        right:2rem;
         background:#353b48;
         display:block;
         height:2px;
@@ -71,11 +73,19 @@ export const SkillTab2=styled.div`
         border-radius:3px;
         overflow:hidden;
         box-shadow:0 0 10px #2187e7b3;
+        @media(max-width:800px){
+            width:20rem;
+        }
+        @media(max-width:500px){
+            width:15rem;
+        }
+
+       
     }
     
     .bar span{
         height:2px;
-        float:left;
+        float:right;
         background:#2187e7;
 
     }
@@ -109,7 +119,7 @@ export const SkillTab1=styled.div`
     height:100%;
     flex-direction:column;
     background-color:#7299C8;
-    color:red;
+    color:#313B6B;
     font-size:2rem;
     padding:2rem 2rem;
     clip-path: polygon(0 0, 61% 0, 43% 100%, 0 100%);
@@ -148,6 +158,13 @@ export const SkillTab1=styled.div`
         border-radius:3px;
         overflow:hidden;
         box-shadow:0 0 10px #2187e7b3;
+        @media(max-width:800px){
+            width:20rem;
+        }
+        @media(max-width:500px){
+            width:15rem;
+        }
+
     }
     
     .bar span{
