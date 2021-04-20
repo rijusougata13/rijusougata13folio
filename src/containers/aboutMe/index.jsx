@@ -21,8 +21,8 @@ const AboutMe=(props)=>{
                 <Heading data-aos="fade-left">Who Am I ?</Heading>
                 <SubHeading data-aos="fade-right">I am Sougata Das, currently pursuing b.tech in Computer Science Engineering.I am interested in competetive coding and web devlopment</SubHeading>
             </AboutText>
-            <AboutImg src={AboutMeImg}/>
-            <Button><a href="/Resume.docx" download="inddex.docx">GET CV </a></Button>
+            {/* <AboutImg src={AboutMeImg}/> */}
+            <Button><a href="/Resume.docx" download="index.docx">GET CV </a></Button>
         
         </Wrappers>
         {/* <div className="svg">
