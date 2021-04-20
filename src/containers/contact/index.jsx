@@ -12,8 +12,12 @@ const Contact=(props)=>{
     },[]);
     return(
         <ExternalWrapper className="contact">
-            <Heading data-aos="fade-down">Connect With Me</Heading>
-            <Wrappers data-aos="fade-up">
+            <Heading 
+            data-aos="fade-down"
+            >Connect With Me</Heading>
+            <Wrappers 
+            // data-aos="fade-up"
+            >
                 <ul>
                 <li onClick={event =>  window.location.href='https://github.com/rijusougata13'}> <FaGithub size='2rem'/></li>
                 <li onClick={event =>  window.location.href='https://www.facebook.com/sougatadas.das.946'}><FaFacebook size='2rem'/></li>

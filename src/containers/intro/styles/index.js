@@ -36,13 +36,12 @@ export const Button=styled(StyledButton)`
     :hover{
     background:linear-gradient(to right, goldenrod, gold);
 }
-    :focus{
+    /* :focus{ */
         /* transform:scaleY(81.0) scaleX(10);  */
-        opacity:0;
-        
+        /* opacity:0;
         background-color:goldenrod;
         
-    }
+    } */
 `;
 
 export const ImgBody=styled.div`

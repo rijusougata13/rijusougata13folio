@@ -103,8 +103,8 @@ export const Button = styled(StyledButton)`
     border-radius:20px;
     position:absolute;
     bottom:1rem;
-    margin:2rem 2rem;
-
+    margin:0rem 2rem;
+    margin-top:2rem;
     ${({change})=>
 
         change &&
@@ -147,6 +147,7 @@ export const Button = styled(StyledButton)`
         padding:0;
         margin:0;
         font-size:8px;
+      
     }
 ` ;
 
@@ -157,7 +158,7 @@ export const SliderDiv=styled.div`
     transition:all .2s;
     width:100%;
     height:100vh;
-    margin-top:10rem;
+    margin-top:0rem;
     ${({open})=>
 
         open &&
@@ -187,6 +188,12 @@ export const SliderDiv=styled.div`
     }
     }
 
+    .toggle{
+        @media(max-width:700px){
+            top:12px;
+
+        }
+    }
 
     overflow: hidden;
     :focus{
