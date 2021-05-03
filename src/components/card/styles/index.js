@@ -40,7 +40,7 @@ export const StyledCard=styled.div`
         position:absolute;
         top:0;
         z-index: 2;
-        transition-delay:.5s;
+        /* transition-delay:.5s; */
     }
 
     &:hover img{
