@@ -128,9 +128,10 @@ const ProjectPage=(props)=>{
     ]
         var open;
     return(
-        // <div>
+        <div>
          
-        //  <Wrappers>
+         {/* <Wrappers> */}
+        
         <SliderDiv  open={isOpen} id="projects"  >
          { isOpen ? <p className="heading" ><div data-aos="fade-left">MY PROJECTS</div> </p>:<p className="heading" ><div data-aos="fade-right">competitive coding</div> </p> }
             <Button className="toggle" change onClick={()=>setIsOpen(!isOpen)} >Toggle</Button>
@@ -169,9 +170,9 @@ const ProjectPage=(props)=>{
         </Slider>
         
         </SliderDiv>
-        //   </Wrappers>
+           {/* </Wrappers> */}
         
-        //  </div>
+          </div>
 
        
     );

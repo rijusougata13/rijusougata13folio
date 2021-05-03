@@ -1,7 +1,7 @@
 import React,{useEffect} from 'react';
 import Aos from 'aos';
 import "aos/dist/aos.css";
-import {Heading,SubHeading,AboutText,Wrappers,AboutImg,About,Wrapper,Button,SvgDiv,BackgroundImg} from './ styles/index';
+import {Heading,SubHeading,AboutText,Wrappers,AboutImg,About,Wrapper,Button,SvgDiv,BackgroundImg, BlackWrapper} from './ styles/index';
 import AboutMeImg from '../../assets/images/aboutMe.png';
 import Background from '../../assets/images/cool-background (1).svg';
 
@@ -12,11 +12,13 @@ const AboutMe=(props)=>{
     },[]);
 
     return(
-        
-        <Wrapper id="about">
        
-        <Wrappers>
-            {/* <BackgroundImg src={Background} alt="" /> */}
+        <Wrapper id="about">
+         <BlackWrapper>
+       
+         </BlackWrapper>
+          <Wrappers>
+            
             <Heading>About Me</Heading>
             <About>
             
@@ -31,12 +33,13 @@ const AboutMe=(props)=>{
             
             </About>
             <Button onClick={e=>window.open("https://drive.google.com/file/d/1GBHPkljidWygxsEA8bE9AP0piY6ThPfK/view?usp=sharing")}>
-                {/* <a href="/Resume.docx" download="index.docx"> */}
+               
                     Download CV
-                     {/* </a> */}
+               
                      </Button>
         </Wrappers>
         </Wrapper>
+       
     );
 }
 

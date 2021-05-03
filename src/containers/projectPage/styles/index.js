@@ -2,6 +2,8 @@ import styled ,{css} from 'styled-components';
 import {StyledHeading} from '../../../components/heading-text/styles/index';
 import {StyledSubHeading} from '../../../components/subHeading-text/styles/index';
 import {StyledButton} from '../../../components/button/styles/index';
+import BackgroundImageFixed from '../../../assets/images/backgroundFixed3.jpg';
+
 
 export const Wrappers = styled.div`
     height:100vh;
@@ -44,7 +46,7 @@ export const Wrapper = styled.div`
 
 export const Heading =styled(StyledHeading)`
     text-transform:uppercase;
-    color:goldenrod;
+    color:#99B8E9;
     font-weight:1000;
     letter-spacing:.4rem;
     font-size:2rem;
@@ -154,28 +156,30 @@ export const Button = styled(StyledButton)`
 export const SliderDiv=styled.div`
     position:relative;
     padding:2rem 0rem;
-    background-color:#413E62;
+       background: url(${BackgroundImageFixed}) center no-repeat fixed;
+   background-size:100%;
+    /* background-color:#413E62; */
     transition:all .2s;
     width:100%;
     height:100vh;
     margin-top:0rem;
+    .slick-dots li button:before{
+        color:goldenrod;
+    }
+
     ${({open})=>
 
         open &&
         css`
            background-color:#413E62;
-
-
         `
-
-
     }
 
 
     .heading{
         font-size:3rem;
         font-weight:800;
-        color:goldenrod;
+        color:#ECA51D;
         display:flex;
         align-items:center;
         justify-content:center;
@@ -194,21 +198,22 @@ export const SliderDiv=styled.div`
 
         }
     }
-
+    
     overflow: hidden;
     :focus{
         outline:none;
     }
-
+    
     .slick-dots{
-        background-color:#413E62;
+        
+        /* background-color:#413E62; */
         overflow: hidden;
         height:2rem;
         ${({open})=>
 
         open &&
         css`
-           background-color:#413E62;
+           /* background-color:#413E62; */
         `
     }
         @media(max-width:800px){

@@ -127,7 +127,7 @@ export const Wrappers = styled.div`
     margin:1rem 5rem;
     padding:0 0;
     @media(max-width:700px){
-        align-item:center;
+        align-items:center;
     }
     .TypedText{
     

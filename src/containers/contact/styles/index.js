@@ -3,7 +3,8 @@ import styled from 'styled-components';
 import { keyframes } from 'styled-components';
 import {StyledHeading} from '../../../components/heading-text/styles/index';
 import {StyledSubHeading} from '../../../components/subHeading-text/styles/index';
-
+import BackgroundImage from '../../../assets/images/backgroundFixed.jpg';
+import { BackgroundImg } from '../../aboutMe/ styles';
 
 
 const animate =keyframes`
@@ -127,9 +128,11 @@ display:flex;
 flex-direction:column;
 align-items:center;
 justify-content:center;
-height:130vh;
+height:10vh;
 width:100%;  
-background-color:#141A16;
+background-color:#111;
+border-bottom:1px solid #f2f2f2;
+
 `;
 
 export const Wrappers = styled.div`
@@ -147,6 +150,7 @@ export const Wrappers = styled.div`
     margin-left:1rem;
     margin-right:1rem;
     overflow:hidden;
+    
     ul{
         margin:0;
         
@@ -201,3 +205,23 @@ export const Wrappers = styled.div`
 
 
 
+export const LinkWrapper=styled.div`
+
+        display:flex;
+        justify-content:space-evenly;
+        align-items:center;
+        flex-direction:row;
+        list-style:none;
+        height:10rem;
+        width:100%;
+
+        li{
+
+          &:hover {
+            cursor:pointer;
+            transform: scale(1.1);
+         }
+
+        }
+
+`;
