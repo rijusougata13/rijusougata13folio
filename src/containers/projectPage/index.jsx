@@ -160,13 +160,14 @@ const ProjectPage=(props)=>{
                 <SubHeading >{comp.body}</SubHeading>
                 </Wrapper>
                 <Button  onClick={event =>  window.location.href=comp.link} >Visit There</Button>
-           
+                
                 </Card>
             ))
            )
            
         }
         </Slider>
+        
         </SliderDiv>
         //   </Wrappers>
         

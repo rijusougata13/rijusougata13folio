@@ -30,8 +30,11 @@ const AboutMe=(props)=>{
             <AboutImg src={AboutMeImg}/>
             
             </About>
-            
-            <Button><a href="/Resume.docx" download="index.docx">Download CV </a></Button>
+            <Button onClick={e=>window.open("https://drive.google.com/file/d/1GBHPkljidWygxsEA8bE9AP0piY6ThPfK/view?usp=sharing")}>
+                {/* <a href="/Resume.docx" download="index.docx"> */}
+                    Download CV
+                     {/* </a> */}
+                     </Button>
         </Wrappers>
         </Wrapper>
     );

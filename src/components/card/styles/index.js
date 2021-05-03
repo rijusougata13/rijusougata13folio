@@ -27,9 +27,11 @@ export const StyledCard=styled.div`
         position:absolute;
         transform:translateY(20%); 
         transition:all 1s;
+        
+        transition-delay:-.5s;
     }
     &:hover:before{
-        transform:translateY(2%);
+        transform:translateY(1%);
     }
 
     img{
