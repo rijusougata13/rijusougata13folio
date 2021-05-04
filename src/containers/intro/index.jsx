@@ -5,8 +5,13 @@ import Typed from 'react-typed';
 import AOS from 'aos';
 import Particles from 'react-particles-js';
 import 'aos/dist/aos.css'; 
-import {IntroDiv,Wrappers,Heading,SubHeading,IntroImg,ImgBody,Wrapper,Button} from './styles/index';
+import {IntroDiv,Wrappers,Heading,SubHeading,IntroImg,ImgBody,Wrapper,Button, SideImg} from './styles/index';
 import IntroImage from '../../assets/images/download.png';
+import ReactImg from '../../assets/images/react.png';
+import CssImg from '../../assets/images/css.png';
+import JsImg from '../../assets/images/js.png';
+import NodeImg from '../../assets/images/nodejs.png';
+
 import StyledButton from '../../components/button/index';
 
 
@@ -16,6 +21,10 @@ const Intro=(props)=>{
     
     const [open,setIsOpen]=useState(0);
     // console.log(open)
+    const Clicked=()=>{
+        props.trigger();
+        setIsOpen(true);
+    }
     return (
         <ImgBody id="home" >
              <Particles
@@ -32,7 +41,7 @@ const Intro=(props)=>{
                 particles:{
                     
                     number:{
-                        value:100,
+                        value:20,
                         density:{
                             
                             enable:true,
@@ -63,10 +72,16 @@ const Intro=(props)=>{
             loop
             />
             </Wrappers>
-            <Wrappers>
-                <IntroImg src={(IntroImage)}></IntroImg>
-            </Wrappers>
-            <Button onClick={props.trigger}  >KNOW MORE</Button>
+            {/* <Wrappers>
+                <IntroImg src={(ReactImg)}></IntroImg>
+            </Wrappers> */}
+            <SideImg>
+               <img className="reactImg" src={(ReactImg)}/>
+               <img className="cssImg" src={(CssImg)}/>
+               <img className="jsImg" src={(JsImg)}/>
+                     <img className="nodeImg" src={(NodeImg)}/>
+            </SideImg>
+           {open?null:<Button onClick={Clicked}  >KNOW MORE</Button>} 
             {/* </Wrapper> */}
         </div>
         

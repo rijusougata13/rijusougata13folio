@@ -116,6 +116,7 @@ export const SubHeading =styled(StyledSubHeading)`
         font-weight: bolder;
         letter-spacing:.1rem;
         
+        
     }
 
 `
@@ -162,12 +163,95 @@ export const Wrapper = styled.div`
 
 `;
 export const IntroImg=styled.img`
-    width:25rem;
-    height:30rem;
-    
+    width:5rem;
+    height:5rem;
+    background: rgba( 229, 94, 94, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
     @media(max-width:1000px){
         width:10rem;
         height:10rem;
     }
 `;
 
+
+export const SideImg=styled.div`
+    position:relative;
+    /* background:red; */
+    display:flex;
+    height:40vh;
+    width:40vw;
+    right:2rem;
+    align-items:center;
+    flex-wrap:wrap;
+    justify-content:center;
+
+    @media(max-width:800px){
+        display:none;
+    }
+
+    .reactImg{
+        position:absolute;
+        height:5rem;
+        width:5rem;
+        top:0;
+       background: rgba( 15, 28, 35, 0.35 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 18.0px );
+-webkit-backdrop-filter: blur( 18.0px );
+border-radius: 50%;
+padding:1rem;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+    };
+     .cssImg{
+        position:absolute;
+        height:5rem;
+        width:5rem;
+        top:5rem;
+        left:0;
+       background: rgba( 15, 28, 35, 0.35 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 18.0px );
+-webkit-backdrop-filter: blur( 18.0px );
+border-radius: 50%;
+padding:1rem;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+    };
+     .nodeImg{
+        position:absolute;
+        height:5rem;
+        width:5rem;
+        top:10rem;
+        right:10rem;
+       background: rgba( 15, 28, 35, 0.35 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 18.0px );
+-webkit-backdrop-filter: blur( 18.0px );
+border-radius: 50%;
+padding:1rem;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+        @media(max-width:1000px){
+            display:none;
+        }
+    };
+    .jsImg{
+        position:absolute;
+        height:5rem;
+        width:5rem;
+        top:15rem;
+        left:5rem;
+       background: rgba( 15, 28, 35, 0.35 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 18.0px );
+-webkit-backdrop-filter: blur( 18.0px );
+border-radius: 10px;
+padding:1rem;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+    };
+`;

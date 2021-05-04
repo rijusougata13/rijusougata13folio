@@ -106,6 +106,7 @@ export const Wrappers = styled.div`
     
     /* margin-top:20rem; */
     height:100vh;
+    width:100%;
     display:flex;
     flex-direction:column;
     align-items:center;
@@ -116,7 +117,7 @@ export const Wrappers = styled.div`
     overflow:hidden;
     /* position:relative; */
     @media(max-width:900px){
-        flex-direction:column;
+        
         height:100vh;
     }
 
@@ -213,7 +214,7 @@ export const AboutText=styled.div`
     /* position:absolute; */
     height:20%;
     width:50%;
-    background-color:#2B393F;
+    /* background-color:#2B393F; */
     color:#f2f2f2;
     letter-spacing:.1rem;
     font-size:2rem;
@@ -226,9 +227,16 @@ export const AboutText=styled.div`
     display:flex;
     align-items:center;
     flex-direction:column;
-    border-radius:5rem;
+    /* border-radius:5rem; */
     justify-content:space-around;
-    box-shadow: 2px 5px 15px #f2f2f2;
+    /* box-shadow: 2px 5px 15px #f2f2f2; */
+    background: rgba( 216, 138, 10, 0.45 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 7.5px );
+-webkit-backdrop-filter: blur( 7.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+
     overflow:hidden;
     z-index:1;
     @media(max-width:900px){

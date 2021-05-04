@@ -67,8 +67,9 @@ export const SkillTab2=styled.div`
         right:2rem;
         background:#353b48;
         display:block;
-        height:2px;
+        height:5px;
         width:40rem;
+        margin-top:15px;
         border:1px solid rgba(0,0,0,.3);
         border-radius:3px;
         overflow:hidden;
@@ -152,8 +153,9 @@ export const SkillTab1=styled.div`
     .bar{
         background:#353b48;
         display:block;
-        height:2px;
+        height:5px;
         width:40rem;
+         margin-top:15px;
         border:1px solid rgba(0,0,0,.3);
         border-radius:3px;
         overflow:hidden;

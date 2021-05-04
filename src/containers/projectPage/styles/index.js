@@ -2,7 +2,7 @@ import styled ,{css} from 'styled-components';
 import {StyledHeading} from '../../../components/heading-text/styles/index';
 import {StyledSubHeading} from '../../../components/subHeading-text/styles/index';
 import {StyledButton} from '../../../components/button/styles/index';
-import BackgroundImageFixed from '../../../assets/images/backgroundFixed3.jpg';
+import BackgroundImageFixed from '../../../assets/images/backgroundFixed4.jpg';
 
 
 export const Wrappers = styled.div`
@@ -158,7 +158,7 @@ export const SliderDiv=styled.div`
     padding:2rem 0rem;
        background: url(${BackgroundImageFixed}) center no-repeat fixed;
    background-size:100%;
-    /* background-color:#413E62; */
+    background-color:#413E62;
     transition:all .2s;
     width:100%;
     height:100vh;
