@@ -14,19 +14,56 @@ import NodeImg from '../../assets/images/nodejs.png';
 
 import StyledButton from '../../components/button/index';
 
+import { css } from "@emotion/core";
+import DotLoader from "react-spinners/DotLoader";
 
+// Can be a string as well. Need to ensure each key-value pair ends with ;
+const override = css`
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  position:absolute;
+  top:45%;
+  left:45%;
+  margin: 0 auto;
+  border-color: red;
+`;
 
 
 const Intro=(props)=>{
-    
+   
+    const [loading,setLoading]=useState(false);
+    useEffect(()=>{
+        setLoading(true);
+        setTimeout(()=>{
+            setLoading(false);
+        },2000);
+    },[])
     const [open,setIsOpen]=useState(0);
     // console.log(open)
     const Clicked=()=>{
-        props.trigger();
+        
+        
+        // setTimeout(()=>{
+            setLoading(true);
+        setTimeout(()=>{
+            props.trigger();
         setIsOpen(true);
+            setLoading(false);
+        },1500);
+        // },1000);
+          
+        
     }
     return (
-        <ImgBody id="home" >
+
+       <React.Fragment>
+            {
+            loading ?
+             
+                <DotLoader color={"#F37A24"} loading={loading} css={override} size={80}  />
+             :
+              <ImgBody id="home" >
              <Particles
             style={{
             "left":"0",
@@ -83,7 +120,12 @@ const Intro=(props)=>{
             {/* </Wrapper> */}
         </div>
         
-    </ImgBody>
+         </ImgBody>
+        
+        }
+       </React.Fragment>
+       
+        
     );
 }
 export default Intro;

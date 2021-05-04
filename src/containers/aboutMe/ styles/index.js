@@ -283,7 +283,7 @@ export const About=styled.div`
 
 export const BlackWrapper=styled.div`
     height:100%;
-    opacity:.5;
+    opacity:.7;
     background:black;
     position:relative;
 `;

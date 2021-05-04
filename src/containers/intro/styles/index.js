@@ -128,6 +128,7 @@ export const Wrappers = styled.div`
     align-items:left;
     justify-content:center;
     margin:1rem 5rem;
+    text-align:left;
     padding:0 0;
     @media(max-width:700px){
         align-items:center;

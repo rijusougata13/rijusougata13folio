@@ -9,6 +9,7 @@ import Feedback from './containers/feedback';
 import Skill from './containers/skills/index';
 import React,{useState} from 'react';
 import { Link, animateScroll as scroll } from "react-scroll";
+import LoadingPage from './components/loadingPage';
 
 
 const Wrapper=styled.div`
@@ -37,12 +38,13 @@ function App() {
 const [statee, setState] = useState(false);
 const   triggerState = ()=> {
     setState(true);
-   scroll.scrollToBottom();
+    window.scrollTo(20,20);
+  //  scroll.scrollToBottom();
 }
 
   return (
     <Wrapper>
-     {/* <Navbar/> */}
+     {/* <LoadingPage/> */}
      {statee?<Navbar/>:null} 
      <Intro clicked={ScrollHandler} trigger={triggerState} />
      {statee?<AboutMe/>:null} 
@@ -51,7 +53,6 @@ const   triggerState = ()=> {
      
      {statee?<Contact/>:null} 
      
-     {/* <Feedback/> */}
       {statee?<Creator/>:null}
     
    
