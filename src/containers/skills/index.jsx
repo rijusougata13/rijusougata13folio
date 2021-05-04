@@ -10,7 +10,7 @@ const Skill=(props)=>{
             <Wrapper>
             <SkillTab1>
                 
-                 <h2>FrontEnd</h2>
+                 <h2 >FrontEnd</h2>
                 <li>
                     Html<span className="bar"><span className="html"></span></span>
                 </li>

@@ -46,13 +46,16 @@ export const Wrapper = styled.div`
 
 export const Heading =styled(StyledHeading)`
     text-transform:uppercase;
-    color:#99B8E9;
+    color:#203142;
     font-weight:1000;
     letter-spacing:.4rem;
     font-size:2rem;
     box-sizing:border-box;
     padding:0rem 1rem;
     margin-top:-8rem;
+    font-family: 'Itim', 'cursive';
+    font-family: 'Open Sans', 'sans-serif';
+    font-weight:700;
     
  @media(max-width:800px){
         margin-top:-2rem;
@@ -74,7 +77,8 @@ export const SubHeading =styled(StyledSubHeading)`
      color:#fff;
     font-weight:300;
     letter-spacing:.1rem;
-    font-size:1rem;
+    font-size:1.3rem;
+     font-family: 'Itim', 'cursive';
     box-sizing:border-box;
     padding:1rem 1rem;
     margin-top:-10rem;
@@ -184,7 +188,9 @@ export const SliderDiv=styled.div`
         align-items:center;
         justify-content:center;
         text-transform:uppercase;
-
+         font-family: 'Itim', 'cursive';
+         font-weight:700;
+         letter-spacing:.1rem;
          @media(max-width:700px){
         font-size:2rem;
         padding:1rem;

@@ -10,6 +10,7 @@ import Img from '../../assets/images/hackerearth.jpeg';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+
 const ProjectPage=(props)=>{
 
        useEffect(()=>{

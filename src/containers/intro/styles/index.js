@@ -24,7 +24,6 @@ export const Button=styled(StyledButton)`
       color:#333;
       letter-spacing: .1rem;
       border:none;
-      
       border-radius: 10rem;
       outline: none;
       background:linear-gradient(to right, gold, goldenrod);
@@ -86,6 +85,8 @@ export const Heading =styled(StyledHeading)`
     padding:1rem;
     letter-spacing:.3rem;
     color:#fff;
+    font-family: 'Itim', 'cursive';
+    font-family: 'Open Sans', 'sans-serif';
     text-shadow:0 0 50px #0f0,
                 0 0 100px #0f0,
                 0 0 150px #0f0,
@@ -111,6 +112,7 @@ export const SubHeading =styled(StyledSubHeading)`
         padding:1rem;
         font-size: 2rem;
         letter-spacing:.3rem;
+        font-family: 'Itim', 'cursive';
     @media(max-width:700px){
         font-size:1.4rem;
         font-weight: bolder;
@@ -159,9 +161,8 @@ export const Wrapper = styled.div`
     justify-content:center;
     margin:1rem 5rem;
     padding:0 0;
-    
-
 `;
+
 export const IntroImg=styled.img`
     width:5rem;
     height:5rem;
@@ -198,15 +199,22 @@ export const SideImg=styled.div`
         height:5rem;
         width:5rem;
         top:0;
-       background: rgba( 15, 28, 35, 0.35 );
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 18.0px );
--webkit-backdrop-filter: blur( 18.0px );
-border-radius: 50%;
-padding:1rem;
-border: 1px solid rgba( 255, 255, 255, 0.18 );
-
+        background: rgba( 15, 28, 35, 0.35 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 18.0px );
+        -webkit-backdrop-filter: blur( 18.0px );
+        border-radius: 50%;
+        padding:1rem;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        transition: transform 1s ease-in-out;
+        &:hover{
+            transform: rotate(360deg);
+            cursor:pointer;
+        }
+        
     };
+
+   
      .cssImg{
         position:absolute;
         height:5rem;
@@ -220,7 +228,11 @@ backdrop-filter: blur( 18.0px );
 border-radius: 50%;
 padding:1rem;
 border: 1px solid rgba( 255, 255, 255, 0.18 );
-
+transition: transform 1s ease-in-out;
+        &:hover{
+            transform: rotateY(360deg);
+            cursor:pointer;
+        }
     };
      .nodeImg{
         position:absolute;
@@ -238,6 +250,13 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
         @media(max-width:1000px){
             display:none;
         }
+
+        transition: transform 1s ease-in-out;
+        &:hover{
+            transform: rotate(360deg);
+            cursor:pointer;
+        }
+    };
     };
     .jsImg{
         position:absolute;
@@ -246,12 +265,17 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
         top:15rem;
         left:5rem;
        background: rgba( 15, 28, 35, 0.35 );
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 18.0px );
--webkit-backdrop-filter: blur( 18.0px );
-border-radius: 10px;
-padding:1rem;
-border: 1px solid rgba( 255, 255, 255, 0.18 );
-
-    };
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 18.0px );
+        -webkit-backdrop-filter: blur( 18.0px );
+        border-radius: 10px;
+        padding:1rem;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        transition: transform 1s ease-in-out;
+        &:hover{
+            transform-origin:center;
+            transform: rotateX(360deg);
+            cursor:pointer;
+        }
+    }
 `;

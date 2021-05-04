@@ -188,6 +188,7 @@ export const Heading =styled(StyledHeading)`
     color:#D8AF74;
     font-weight:1000;
     letter-spacing:.4rem;
+    font-family: 'Itim', 'cursive';
     font-size:2.8rem;
     margin-top:5rem;
  @media(max-width:700px){
@@ -202,6 +203,8 @@ export const SubHeading =styled(StyledSubHeading)`
         font-size: 2rem;
         color:#E68769;
         font-weight:500;
+        font-family: 'Itim', 'cursive';
+    font-family: 'Open Sans', 'sans-serif';
     @media(max-width:900px){
         font-size:1rem;
         padding:1rem;

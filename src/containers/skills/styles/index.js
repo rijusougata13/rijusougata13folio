@@ -44,6 +44,8 @@ export const SkillTab2=styled.div`
     margin-right:5rem;
     
     h2{
+        font-family: 'Itim', 'cursive';
+    font-family: 'Open Sans', 'sans-serif';
         margin-right:20rem;
         @media(max-width:800px){
             margin-right:10rem;
@@ -132,7 +134,8 @@ export const SkillTab1=styled.div`
    
     h2{
         margin-left:25rem;
-
+        font-family: 'Itim', 'cursive';
+    font-family: 'Open Sans', 'sans-serif';
         @media(max-width:800px){
             margin-left:10rem;
             font-size:1.5rem;
@@ -155,7 +158,7 @@ export const SkillTab1=styled.div`
         display:block;
         height:5px;
         width:40rem;
-         margin-top:15px;
+        margin-top:15px;
         border:1px solid rgba(0,0,0,.3);
         border-radius:3px;
         overflow:hidden;
@@ -255,7 +258,7 @@ export const Heading =styled(StyledHeading)`
    position:absolute;
     left:40%;
     font-size:4rem;
-
+ font-family: 'Itim', 'cursive';
  @media(max-width:800px){
         left:25%;
         top:5%;

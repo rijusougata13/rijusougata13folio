@@ -28,14 +28,12 @@ const Intro=(props)=>{
     return (
         <ImgBody id="home" >
              <Particles
-            
             style={{
             "left":"0",
             "position": "absolute",
             "height": "100vh",
             "width":"100vw",
             "z-index": 1,
-
             }}
             params={{
                 particles:{
@@ -79,7 +77,7 @@ const Intro=(props)=>{
                <img className="reactImg" src={(ReactImg)}/>
                <img className="cssImg" src={(CssImg)}/>
                <img className="jsImg" src={(JsImg)}/>
-                     <img className="nodeImg" src={(NodeImg)}/>
+               <img className="nodeImg" src={(NodeImg)}/>
             </SideImg>
            {open?null:<Button onClick={Clicked}  >KNOW MORE</Button>} 
             {/* </Wrapper> */}
