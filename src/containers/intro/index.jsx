@@ -5,7 +5,7 @@ import Typed from 'react-typed';
 import AOS from 'aos';
 import Particles from 'react-particles-js';
 import 'aos/dist/aos.css'; 
-import {IntroDiv,Wrappers,Heading,SubHeading,IntroImg,ImgBody,Wrapper,Button, SideImg} from './styles/index';
+import {IntroDiv,Wrappers,Heading,SubHeading,IntroImg,ImgBody,Wrapper,Button, SideImg,IconsDiv} from './styles/index';
 import IntroImage from '../../assets/images/download.png';
 import ReactImg from '../../assets/images/react.png';
 import CssImg from '../../assets/images/css.png';
@@ -94,10 +94,11 @@ const Intro=(props)=>{
             }}
             />
         <div className='overlay'>
-            {/* <Wrapper> */}
+         
             <Wrappers>
             <SubHeading >Hey</SubHeading>
             <Heading className="Heading" >I AM SOUGATA DAS</Heading>
+            
             <Typed 
             className="TypedText"
             strings={["web-developer","competitive coder"]}
@@ -106,18 +107,27 @@ const Intro=(props)=>{
             backDelay={1000}            
             loop
             />
+            <IconsDiv>
+                  <img className="reactImg" src={(ReactImg)}/>
+               <img className="cssImg" src={(CssImg)}/>
+               <img className="jsImg" src={(JsImg)}/>
+               <img className="nodeImg" src={(NodeImg)}/>
+            </IconsDiv>
             </Wrappers>
-            {/* <Wrappers>
-                <IntroImg src={(ReactImg)}></IntroImg>
-            </Wrappers> */}
-            <SideImg>
+            <Wrappers>
+                {/* <IntroImg src={(ReactImg)}></IntroImg> */}
+                <img align='right' src="https://media.giphy.com/media/M9gbBd9nbDrOTu1Mqx/giphy.gif" width="330" className="gifImg"></img>
+               {/* <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="400" height="400" className="gifImg"/>  */}
+            </Wrappers>
+            
+            {/* <SideImg>
                <img className="reactImg" src={(ReactImg)}/>
                <img className="cssImg" src={(CssImg)}/>
                <img className="jsImg" src={(JsImg)}/>
                <img className="nodeImg" src={(NodeImg)}/>
-            </SideImg>
+            </SideImg> */}
            {open?null:<Button onClick={Clicked}  >KNOW MORE</Button>} 
-            {/* </Wrapper> */}
+           
         </div>
         
          </ImgBody>

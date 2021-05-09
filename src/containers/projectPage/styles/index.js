@@ -46,7 +46,7 @@ export const Wrapper = styled.div`
 
 export const Heading =styled(StyledHeading)`
     text-transform:uppercase;
-    color:#203142;
+    color:#E14A19;
     font-weight:1000;
     letter-spacing:.4rem;
     font-size:2rem;
@@ -160,9 +160,9 @@ export const Button = styled(StyledButton)`
 export const SliderDiv=styled.div`
     position:relative;
     padding:2rem 0rem;
-       background: url(${BackgroundImageFixed}) center no-repeat fixed;
+       /* background: url(${BackgroundImageFixed}) center no-repeat fixed; */
    background-size:100%;
-    background-color:#413E62;
+    background-color:#0C2F42;
     transition:all .2s;
     width:100%;
     height:100vh;
@@ -175,7 +175,7 @@ export const SliderDiv=styled.div`
 
         open &&
         css`
-           background-color:#413E62;
+           background-color:#22475A;
         `
     }
 

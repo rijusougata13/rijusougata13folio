@@ -57,7 +57,7 @@ export const Button = styled(StyledButton)`
     
     margin:2rem 2rem;
     z-index:1;
-   background:#55C6E9;
+   background:#93B289;
     a{
         color:black;
         text-decoration:none;

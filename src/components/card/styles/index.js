@@ -5,7 +5,7 @@ export const StyledCard=styled.div`
     position:relative;
     width:20rem;
     height:30rem;
-    background-color:#6B988E;
+    background-color:#1D2021;
     border-radius:10px;
     display:flex;
     box-sizing:border-box;
@@ -19,7 +19,7 @@ export const StyledCard=styled.div`
 
     &:before{
         content:"";
-        background-color:#6B988E;
+        background-color:#1D2021;
         border-radius:50%;
         top:0;
         height:500%;

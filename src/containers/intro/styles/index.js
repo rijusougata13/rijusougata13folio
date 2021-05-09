@@ -133,8 +133,15 @@ export const Wrappers = styled.div`
     @media(max-width:700px){
         align-items:center;
     }
-    .TypedText{
+
+    .gifImg{
+        @media(max-width:600px){
+            display:none;
+        }
+    }
     
+    .TypedText{
+    margin-bottom:2rem;
     color: white;
     font-size: 1.5rem;
     padding:1rem;
@@ -189,14 +196,12 @@ export const SideImg=styled.div`
     right:2rem;
     align-items:center;
     flex-wrap:wrap;
-    justify-content:center;
-
+    justify-content:space-around;
     @media(max-width:800px){
         display:none;
     }
 
     .reactImg{
-        position:absolute;
         height:5rem;
         width:5rem;
         top:0;
@@ -217,7 +222,7 @@ export const SideImg=styled.div`
 
    
      .cssImg{
-        position:absolute;
+        /* position:absolute; */
         height:5rem;
         width:5rem;
         top:5rem;
@@ -236,18 +241,18 @@ transition: transform 1s ease-in-out;
         }
     };
      .nodeImg{
-        position:absolute;
+        /* position:absolute; */
         height:5rem;
         width:5rem;
         top:10rem;
         right:10rem;
-       background: rgba( 15, 28, 35, 0.35 );
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 18.0px );
--webkit-backdrop-filter: blur( 18.0px );
-border-radius: 50%;
-padding:1rem;
-border: 1px solid rgba( 255, 255, 255, 0.18 );
+        background: rgba( 15, 28, 35, 0.35 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 18.0px );
+        -webkit-backdrop-filter: blur( 18.0px );
+        border-radius: 50%;
+        padding:1rem;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
         @media(max-width:1000px){
             display:none;
         }
@@ -260,7 +265,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
     };
     };
     .jsImg{
-        position:absolute;
+        /* position:absolute; */
         height:5rem;
         width:5rem;
         top:15rem;
@@ -278,5 +283,117 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
             transform: rotateX(360deg);
             cursor:pointer;
         }
-    }
+    };
+`;
+
+export const IconsDiv=styled.div`
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-direction:row;
+    height:100%;
+    width:100%;
+
+      .reactImg{
+        height:3rem;
+        width:3rem;
+        padding:.5rem;
+        top:0;
+        background: rgba( 15, 28, 35, 0.35 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 18.0px );
+        -webkit-backdrop-filter: blur( 18.0px );
+        border-radius: 50%;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        transition: transform 1s ease-in-out;
+        &:hover{
+            transform: rotate(360deg);
+            cursor:pointer;
+        }
+        @media(max-width:1000px){
+         height:2rem;
+        width:2rem;
+        margin:0 10px;
+        }
+        
+    };
+
+   
+     .cssImg{
+        /* position:absolute; */
+         height:3rem;
+        width:3rem;
+        padding:.5rem;
+        top:5rem;
+        left:0;
+       background: rgba( 15, 28, 35, 0.35 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 18.0px );
+-webkit-backdrop-filter: blur( 18.0px );
+border-radius: 50%;
+
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+transition: transform 1s ease-in-out;
+        &:hover{
+            transform: rotateY(360deg);
+            cursor:pointer;
+        }
+        @media(max-width:1000px){
+         height:2rem;
+        width:2rem;
+        margin:0 10px;
+        }
+    };
+     .nodeImg{
+        /* position:absolute; */
+        height:3rem;
+        width:3rem;
+        padding:.5rem;
+        top:10rem;
+        right:10rem;
+        background: rgba( 15, 28, 35, 0.35 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 18.0px );
+        -webkit-backdrop-filter: blur( 18.0px );
+        border-radius: 50%;
+        
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        @media(max-width:1000px){
+         height:2rem;
+        width:2rem;
+        margin:0 10px;
+        }
+
+        transition: transform 1s ease-in-out;
+        &:hover{
+            transform: rotate(360deg);
+            cursor:pointer;
+        }
+    };
+    };
+    .jsImg{
+        /* position:absolute; */
+        height:3rem;
+        width:3rem;
+        padding:.5rem;
+        top:15rem;
+        left:5rem;
+       background: rgba( 15, 28, 35, 0.35 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 18.0px );
+        -webkit-backdrop-filter: blur( 18.0px );
+        border-radius: 50%;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        transition: transform 1s ease-in-out;
+        &:hover{
+            transform-origin:center;
+            transform: rotateX(360deg);
+            cursor:pointer;
+        }
+        @media(max-width:1000px){
+         height:2rem;
+        width:2rem;
+        margin:0 10px;
+        }
+    };
 `;

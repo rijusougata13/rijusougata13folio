@@ -10,6 +10,7 @@ import Skill from './containers/skills/index';
 import React,{useState} from 'react';
 import { Link, animateScroll as scroll } from "react-scroll";
 import LoadingPage from './components/loadingPage';
+import Achievement from './containers/achievement';
 
 
 const Wrapper=styled.div`
@@ -49,6 +50,7 @@ const   triggerState = ()=> {
      <Intro clicked={ScrollHandler} trigger={triggerState} />
      {statee?<AboutMe/>:null} 
      {statee?<Skill/>:null} 
+     {statee?<Achievement/>:null}
      {statee?<ProjectPage/>:null} 
      
      {statee?<Contact/>:null} 
