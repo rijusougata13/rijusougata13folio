@@ -11,6 +11,7 @@ import React,{useState} from 'react';
 import { Link, animateScroll as scroll } from "react-scroll";
 import LoadingPage from './components/loadingPage';
 import Achievement from './containers/achievement';
+import Testimonials from './containers/testimonials';
 
 
 const Wrapper=styled.div`
@@ -52,7 +53,7 @@ const   triggerState = ()=> {
      {statee?<Skill/>:null} 
      {statee?<Achievement/>:null}
      {statee?<ProjectPage/>:null} 
-     
+     {statee?<Testimonials/>:null}
      {statee?<Contact/>:null} 
      
       {statee?<Creator/>:null}

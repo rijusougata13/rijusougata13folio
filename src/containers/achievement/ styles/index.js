@@ -8,7 +8,7 @@ import BackgroundImageFixed from '../../../assets/images/backgroundFixed.jpg';
 
 export const Wrapper=styled.div`
     width:100%;
-    height:110vh;
+    height:100%;
     position:relative;
     background:#141A16;
     display:flex;
@@ -78,7 +78,7 @@ export const AchivementTab=styled.div`
    
    
   
-    height:70vh;
+    height:70%;
     width:90vw;
     color:#f2f2f2;
     text-align:left;
@@ -87,6 +87,7 @@ export const AchivementTab=styled.div`
     display:flex;
     flex-wrap:wrap;
     align-items:left;
+    margin:2rem 0;
     flex-direction:column;
     justify-content:flex-start;
     background: rgba( 13, 70, 107, 0.25 );
@@ -105,6 +106,17 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 
         a{
             color:#f2f2f2;
+        }
+          @media(max-width:900px){
+            font-size:1rem;
+        }
+    }
+
+    li{
+         color:#ff4b00;
+        @media(max-width:900px){
+            font-size:1.2rem;
+           
         }
     }
 `;

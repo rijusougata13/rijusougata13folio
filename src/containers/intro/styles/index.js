@@ -54,7 +54,7 @@ export const ImgBody=styled.div`
         position:relative;
         width:100%;
         height:100%;
-        background:rgba(3, 4, 1, .6);
+        background:rgba(3, 4, 1, .8);
         display:flex;
         flex-direction:row;
         align-items:center;
@@ -135,6 +135,9 @@ export const Wrappers = styled.div`
     }
 
     .gifImg{
+        @media(max-width:900px){
+            width:220px;
+        }
         @media(max-width:600px){
             display:none;
         }
