@@ -13,6 +13,7 @@ export const Wrapper=styled.div`
     justify-content:flex-start;
     align-items:center;
     flex-direction:column;
+    position:relative;
 
 `;
 
@@ -138,3 +139,32 @@ export const TestimonialCard=styled.div`
 `;
 
 
+export const Input=styled.input`
+    width:40%;
+    background:#E6D7D3;
+    margin:1rem;
+    border-radius:50px;
+    text-decoration:none;
+    border:none;
+    outline:none;
+    height:5%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    font-size:1.2rem;
+    @media(max-width:900px){
+        width:90%;
+    }
+`;
+
+export const ButtonField=styled.div`
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    /* background:#242C3A; */
+    position:absolute;
+    right:2rem;
+    
+`;

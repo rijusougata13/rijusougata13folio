@@ -215,7 +215,7 @@ export const SubHeading =styled(StyledSubHeading)`
 
 export const AboutText=styled.div`
     /* position:absolute; */
-    height:20%;
+    height:50%;
     width:50%;
     /* background-color:#2B393F; */
     color:#f2f2f2;
